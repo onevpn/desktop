@@ -1,0 +1,8 @@
+Package: onevpn
+Architecture: amd64
+Maintainer: onevpn <onevpn@mail.com>
+Depends: debconf, openvpn, libfontconfig
+Installed-Size: 7000
+Priority: optional
+Version: 3.0
+Description: OneVPN

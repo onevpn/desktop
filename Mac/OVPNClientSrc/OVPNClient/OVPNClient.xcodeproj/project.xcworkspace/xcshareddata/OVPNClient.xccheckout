@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>3BC17552-B8E4-4BB1-B5A9-3824D2B6E44B</string>
+	<key>IDESourceControlProjectName</key>
+	<string>OVPNClient</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>BAE9C225A49A6453E0FEC2E7677D8CB6ED1E5875</key>
+		<string>https://bitbucket.org/Hiyorimi/onevpn-wrapper.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Mac/OVPNClientSrc/OVPNClient/OVPNClient.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>BAE9C225A49A6453E0FEC2E7677D8CB6ED1E5875</key>
+		<string>../../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://bitbucket.org/Hiyorimi/onevpn-wrapper.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>BAE9C225A49A6453E0FEC2E7677D8CB6ED1E5875</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>BAE9C225A49A6453E0FEC2E7677D8CB6ED1E5875</string>
+			<key>IDESourceControlWCCName</key>
+			<string>onevpn-wrapper</string>
+		</dict>
+	</array>
+</dict>
+</plist>

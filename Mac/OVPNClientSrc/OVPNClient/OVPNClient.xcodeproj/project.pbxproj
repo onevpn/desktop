@@ -1,0 +1,276 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		84DA0AED1B1D7ED000260E8F /* OVPNHelper.c in Sources */ = {isa = PBXBuildFile; fileRef = 84DA0AEC1B1D7ED000260E8F /* OVPNHelper.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		84DA0AE11B1D7EB600260E8F /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		84DA0AE31B1D7EB600260E8F /* com.aaa.onevpn.OVPNHelper */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = com.aaa.onevpn.OVPNHelper; sourceTree = BUILT_PRODUCTS_DIR; };
+		84DA0AEA1B1D7ED000260E8F /* OVPNHelper-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "OVPNHelper-Info.plist"; sourceTree = "<group>"; };
+		84DA0AEB1B1D7ED000260E8F /* OVPNHelper-Launchd.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "OVPNHelper-Launchd.plist"; sourceTree = "<group>"; };
+		84DA0AEC1B1D7ED000260E8F /* OVPNHelper.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = OVPNHelper.c; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		84DA0AE01B1D7EB600260E8F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		842A44E71B14BFBC00F308E7 = {
+			isa = PBXGroup;
+			children = (
+				84DA0AE41B1D7EB600260E8F /* OVPNHelper */,
+				842A44F11B14BFBC00F308E7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		842A44F11B14BFBC00F308E7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84DA0AE31B1D7EB600260E8F /* com.aaa.onevpn.OVPNHelper */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84DA0AE41B1D7EB600260E8F /* OVPNHelper */ = {
+			isa = PBXGroup;
+			children = (
+				84DA0AEA1B1D7ED000260E8F /* OVPNHelper-Info.plist */,
+				84DA0AEB1B1D7ED000260E8F /* OVPNHelper-Launchd.plist */,
+				84DA0AEC1B1D7ED000260E8F /* OVPNHelper.c */,
+			);
+			path = OVPNHelper;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		84DA0AE21B1D7EB600260E8F /* com.aaa.onevpn.OVPNHelper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84DA0AE71B1D7EB600260E8F /* Build configuration list for PBXNativeTarget "com.aaa.onevpn.OVPNHelper" */;
+			buildPhases = (
+				84DA0ADF1B1D7EB600260E8F /* Sources */,
+				84DA0AE01B1D7EB600260E8F /* Frameworks */,
+				84DA0AE11B1D7EB600260E8F /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = com.aaa.onevpn.OVPNHelper;
+			productName = OVPNHelper;
+			productReference = 84DA0AE31B1D7EB600260E8F /* com.aaa.onevpn.OVPNHelper */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		842A44E81B14BFBC00F308E7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = admin;
+				TargetAttributes = {
+					84DA0AE21B1D7EB600260E8F = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 842A44EB1B14BFBC00F308E7 /* Build configuration list for PBXProject "OVPNClient" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 842A44E71B14BFBC00F308E7;
+			productRefGroup = 842A44F11B14BFBC00F308E7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				84DA0AE21B1D7EB600260E8F /* com.aaa.onevpn.OVPNHelper */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		84DA0ADF1B1D7EB600260E8F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84DA0AED1B1D7ED000260E8F /* OVPNHelper.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		842A450B1B14BFBC00F308E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application: Alexey Azanov (35NMW3MET5)";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		842A450C1B14BFBC00F308E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application: Alexey Azanov (35NMW3MET5)";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		84DA0AE81B1D7EB600260E8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application: Alexey Azanov (35NMW3MET5)";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				OTHER_LDFLAGS = (
+					"-sectcreate",
+					__TEXT,
+					__info_plist,
+					"OVPNHelper/OVPNHelper-Info.plist",
+					"-sectcreate",
+					__TEXT,
+					__launchd_plist,
+					"OVPNHelper/OVPNHelper-Launchd.plist",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		84DA0AE91B1D7EB600260E8F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application: Alexey Azanov (35NMW3MET5)";
+				OTHER_LDFLAGS = (
+					"-sectcreate",
+					__TEXT,
+					__info_plist,
+					"OVPNHelper/OVPNHelper-Info.plist",
+					"-sectcreate",
+					__TEXT,
+					__launchd_plist,
+					"OVPNHelper/OVPNHelper-Launchd.plist",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		842A44EB1B14BFBC00F308E7 /* Build configuration list for PBXProject "OVPNClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				842A450B1B14BFBC00F308E7 /* Debug */,
+				842A450C1B14BFBC00F308E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84DA0AE71B1D7EB600260E8F /* Build configuration list for PBXNativeTarget "com.aaa.onevpn.OVPNHelper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84DA0AE81B1D7EB600260E8F /* Debug */,
+				84DA0AE91B1D7EB600260E8F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 842A44E81B14BFBC00F308E7 /* Project object */;
+}

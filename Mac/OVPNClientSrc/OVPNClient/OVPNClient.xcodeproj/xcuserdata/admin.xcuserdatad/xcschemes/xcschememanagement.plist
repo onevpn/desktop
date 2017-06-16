@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>OVPNClient.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+		<key>OVPNHelper.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>jhjhjh.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>842A44EF1B14BFBC00F308E7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>842A45021B14BFBC00F308E7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>84DA0AE21B1D7EB600260E8F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>84FF425A1B1CD712009E5BAA</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

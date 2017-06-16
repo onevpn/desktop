@@ -1,0 +1,360 @@
+<RCC>
+    <qresource prefix="/bg">
+        <file alias="premium-acc.png">Images/bg/premium-acc.png</file>
+    </qresource>
+    <qresource prefix="/daemon">
+        <file alias="com.aaa.ONEVpn.launcher.plist">Images/Mac/com.aaa.ONEVpn.launcher.plist</file>
+    </qresource>
+    <qresource prefix="/Linux">
+        <file alias="oneVpnTunIpTablesConfig.conf">Linux/oneVpnTunIpTablesConfig.conf</file>
+    </qresource>
+    <qresource prefix="/style">
+        <file alias="FormHaveAccount.qss">styles/FormHaveAccount.qss</file>
+        <file alias="MainWindow.qss">styles/MainWindow.qss</file>
+        <file alias="QMenu.qss">styles/QMenu.qss</file>
+    </qresource>
+    <qresource prefix="/FormLogin">
+        <file alias="loginButton.png">Images/loginButton.png</file>
+        <file alias="loginButtonNormal.png">Images/loginButtonNormal.png</file>
+        <file alias="load.gif">Images/load.gif</file>
+    </qresource>
+    <qresource prefix="/FormConnect">
+        <file alias="ON.png">Images/FormConnect/ON.png</file>
+        <file alias="ON-hover.png">Images/FormConnect/ON-hover.png</file>
+        <file alias="ON-pressed.png">Images/FormConnect/ON-pressed.png</file>
+        <file alias="OFF.png">Images/FormConnect/OFF.png</file>
+        <file alias="OFF-hover.png">Images/FormConnect/OFF-hover.png</file>
+        <file alias="OFF-pressed.png">Images/FormConnect/OFF-pressed.png</file>
+        <file alias="setting_off.png">Images/FormConnect/setting_off.png</file>
+        <file alias="setting_on.png">Images/FormConnect/setting_on.png</file>
+    </qresource>
+
+    <qresource prefix="/Preferences">
+        <file alias="account-off.png">Images/Preferences/account-off.png</file>
+        <file alias="account-on.png">Images/Preferences/account-on.png</file>
+        <file alias="general-off.png">Images/Preferences/general-off.png</file>
+        <file alias="general-on.png">Images/Preferences/general-on.png</file>
+        <file alias="connection-off.png">Images/Preferences/connection-off.png</file>
+        <file alias="connection-on.png">Images/Preferences/connection-on.png</file>
+        <file alias="black-list-off.png">Images/Preferences/black-list-off.png</file>
+        <file alias="black-list-on.png">Images/Preferences/black-list-on.png</file>
+        <file alias="wifi-list-off.png">Images/Preferences/wifi-list-off.png</file>
+        <file alias="wifi-list-on.png">Images/Preferences/wifi-list-on.png</file>
+        <file alias="account-off.png">Images/Preferences/account-off.png</file>
+        <file alias="account-on.png">Images/Preferences/account-on.png</file>
+        <file alias="close.png">Images/Preferences/close.png</file>
+    </qresource>
+
+    <qresource prefix="/Common">
+        <file alias="checkbox_off.png">Images/Common/checkbox_off.png</file>
+        <file alias="checkbox_on.png">Images/Common/checkbox_on.png</file>
+        <file alias="combo_arrow_down_hover.png">Images/Common/combo_arrow_down_hover.png</file>
+        <file alias="combo_arrow_down_normal.png">Images/Common/combo_arrow_down_normal.png</file>
+        <file alias="radio-OFF.png">Images/Common/radio-OFF.png</file>
+        <file alias="radio-ON.png">Images/Common/radio-ON.png</file>
+        <file alias="radiopv2-top.png">Images/Common/radiopv2-top.png</file>
+        <file alias="radiov2-bottom.png">Images/Common/radiov2-bottom.png</file>
+    </qresource>
+    <qresource prefix="/MainWindow">
+        <file alias="background.png">Images/background.png</file>
+        <file>Images/login_loader.gif</file>
+        <file>Images/connect_bg.png</file>
+        <file>Images/dropdown-arrow.png</file>
+        <file>Images/button.png</file>
+        <file>Images/button_pressed.png</file>
+        <file>Images/button_connected.png</file>
+        <file>Images/button_connecting.png</file>
+        <file>Images/button_error.png</file>
+        <file>Images/download-speed.png</file>
+        <file>Images/upload-speed.png</file>
+        <file>Images/settings.png</file>
+        <file>Images/settings_hover.png</file>
+        <file>Images/your_account.png</file>
+        <file>Images/button_connecting.gif</file>
+    </qresource>
+    <qresource prefix="/Fonts">
+        <file>Fonts/Glober Black Italic.otf</file>
+        <file>Fonts/Glober Black.otf</file>
+        <file>Fonts/Glober Bold Italic.otf</file>
+        <file>Fonts/Glober Bold.otf</file>
+        <file>Fonts/Glober Book Italic.otf</file>
+        <file>Fonts/Glober Book.otf</file>
+        <file>Fonts/Glober Heavy Italic.otf</file>
+        <file>Fonts/Glober Heavy.otf</file>
+        <file>Fonts/Glober Light Italic.otf</file>
+        <file>Fonts/Glober Light.otf</file>
+        <file>Fonts/Glober Regular Italic.otf</file>
+        <file>Fonts/Glober Regular.otf</file>
+        <file>Fonts/Glober SemiBold Italic.otf</file>
+        <file>Fonts/Glober SemiBold.otf</file>
+        <file>Fonts/Glober Thin Italic.otf</file>
+        <file>Fonts/Glober Thin.otf</file>
+        <file>Fonts/Glober xBold Italic.otf</file>
+        <file>Fonts/Glober xBold.otf</file>
+    </qresource>
+    <qresource prefix="/Flags">
+        <file>Images/flags/_abkhazia.png</file>
+        <file>Images/flags/_basque-country.png</file>
+        <file>Images/flags/_british-antarctic-territory.png</file>
+        <file>Images/flags/_commonwealth.png</file>
+        <file>Images/flags/_england.png</file>
+        <file>Images/flags/_gosquared.png</file>
+        <file>Images/flags/_kosovo.png</file>
+        <file>Images/flags/_mars.png</file>
+        <file>Images/flags/_nagorno-karabakh.png</file>
+        <file>Images/flags/_nato.png</file>
+        <file>Images/flags/_northern-cyprus.png</file>
+        <file>Images/flags/_olympics.png</file>
+        <file>Images/flags/_red-cross.png</file>
+        <file>Images/flags/_scotland.png</file>
+        <file>Images/flags/_somaliland.png</file>
+        <file>Images/flags/_south-ossetia.png</file>
+        <file>Images/flags/_united-nations.png</file>
+        <file>Images/flags/_unknown.png</file>
+        <file>Images/flags/_wales.png</file>
+        <file>Images/flags/AD.png</file>
+        <file>Images/flags/AE.png</file>
+        <file>Images/flags/AF.png</file>
+        <file>Images/flags/AG.png</file>
+        <file>Images/flags/AI.png</file>
+        <file>Images/flags/AL.png</file>
+        <file>Images/flags/AM.png</file>
+        <file>Images/flags/AN.png</file>
+        <file>Images/flags/AO.png</file>
+        <file>Images/flags/AQ.png</file>
+        <file>Images/flags/AR.png</file>
+        <file>Images/flags/AS.png</file>
+        <file>Images/flags/AT.png</file>
+        <file>Images/flags/AU.png</file>
+        <file>Images/flags/AW.png</file>
+        <file>Images/flags/AX.png</file>
+        <file>Images/flags/AZ.png</file>
+        <file>Images/flags/BA.png</file>
+        <file>Images/flags/BB.png</file>
+        <file>Images/flags/BD.png</file>
+        <file>Images/flags/BE.png</file>
+        <file>Images/flags/BF.png</file>
+        <file>Images/flags/BG.png</file>
+        <file>Images/flags/BH.png</file>
+        <file>Images/flags/BI.png</file>
+        <file>Images/flags/BJ.png</file>
+        <file>Images/flags/BL.png</file>
+        <file>Images/flags/BM.png</file>
+        <file>Images/flags/BN.png</file>
+        <file>Images/flags/BO.png</file>
+        <file>Images/flags/BR.png</file>
+        <file>Images/flags/BS.png</file>
+        <file>Images/flags/BT.png</file>
+        <file>Images/flags/BW.png</file>
+        <file>Images/flags/BY.png</file>
+        <file>Images/flags/BZ.png</file>
+        <file>Images/flags/CA.png</file>
+        <file>Images/flags/CC.png</file>
+        <file>Images/flags/CD.png</file>
+        <file>Images/flags/CF.png</file>
+        <file>Images/flags/CG.png</file>
+        <file>Images/flags/CH.png</file>
+        <file>Images/flags/CI.png</file>
+        <file>Images/flags/CK.png</file>
+        <file>Images/flags/CL.png</file>
+        <file>Images/flags/CM.png</file>
+        <file>Images/flags/CN.png</file>
+        <file>Images/flags/CO.png</file>
+        <file>Images/flags/CR.png</file>
+        <file>Images/flags/CU.png</file>
+        <file>Images/flags/CV.png</file>
+        <file>Images/flags/CW.png</file>
+        <file>Images/flags/CX.png</file>
+        <file>Images/flags/CY.png</file>
+        <file>Images/flags/CZ.png</file>
+        <file>Images/flags/DE.png</file>
+        <file>Images/flags/DJ.png</file>
+        <file>Images/flags/DK.png</file>
+        <file>Images/flags/DM.png</file>
+        <file>Images/flags/DO.png</file>
+        <file>Images/flags/DZ.png</file>
+        <file>Images/flags/EC.png</file>
+        <file>Images/flags/EE.png</file>
+        <file>Images/flags/EG.png</file>
+        <file>Images/flags/EH.png</file>
+        <file>Images/flags/ER.png</file>
+        <file>Images/flags/ES.png</file>
+        <file>Images/flags/ET.png</file>
+        <file>Images/flags/EU.png</file>
+        <file>Images/flags/FI.png</file>
+        <file>Images/flags/FJ.png</file>
+        <file>Images/flags/FK.png</file>
+        <file>Images/flags/FM.png</file>
+        <file>Images/flags/FO.png</file>
+        <file>Images/flags/FR.png</file>
+        <file>Images/flags/GA.png</file>
+        <file>Images/flags/GB.png</file>
+        <file>Images/flags/GD.png</file>
+        <file>Images/flags/GE.png</file>
+        <file>Images/flags/GG.png</file>
+        <file>Images/flags/GH.png</file>
+        <file>Images/flags/GI.png</file>
+        <file>Images/flags/GL.png</file>
+        <file>Images/flags/GM.png</file>
+        <file>Images/flags/GN.png</file>
+        <file>Images/flags/GQ.png</file>
+        <file>Images/flags/GR.png</file>
+        <file>Images/flags/GS.png</file>
+        <file>Images/flags/GT.png</file>
+        <file>Images/flags/GU.png</file>
+        <file>Images/flags/GW.png</file>
+        <file>Images/flags/GY.png</file>
+        <file>Images/flags/HK.png</file>
+        <file>Images/flags/HN.png</file>
+        <file>Images/flags/HR.png</file>
+        <file>Images/flags/HT.png</file>
+        <file>Images/flags/HU.png</file>
+        <file>Images/flags/IC.png</file>
+        <file>Images/flags/ID.png</file>
+        <file>Images/flags/IE.png</file>
+        <file>Images/flags/IL.png</file>
+        <file>Images/flags/IM.png</file>
+        <file>Images/flags/IN.png</file>
+        <file>Images/flags/IQ.png</file>
+        <file>Images/flags/IR.png</file>
+        <file>Images/flags/IS.png</file>
+        <file>Images/flags/IT.png</file>
+        <file>Images/flags/JE.png</file>
+        <file>Images/flags/JM.png</file>
+        <file>Images/flags/JO.png</file>
+        <file>Images/flags/JP.png</file>
+        <file>Images/flags/KE.png</file>
+        <file>Images/flags/KG.png</file>
+        <file>Images/flags/KH.png</file>
+        <file>Images/flags/KI.png</file>
+        <file>Images/flags/KM.png</file>
+        <file>Images/flags/KN.png</file>
+        <file>Images/flags/KP.png</file>
+        <file>Images/flags/KR.png</file>
+        <file>Images/flags/KW.png</file>
+        <file>Images/flags/KY.png</file>
+        <file>Images/flags/KZ.png</file>
+        <file>Images/flags/LA.png</file>
+        <file>Images/flags/LB.png</file>
+        <file>Images/flags/LC.png</file>
+        <file>Images/flags/LI.png</file>
+        <file>Images/flags/LK.png</file>
+        <file>Images/flags/LR.png</file>
+        <file>Images/flags/LS.png</file>
+        <file>Images/flags/LT.png</file>
+        <file>Images/flags/LU.png</file>
+        <file>Images/flags/LV.png</file>
+        <file>Images/flags/LY.png</file>
+        <file>Images/flags/MA.png</file>
+        <file>Images/flags/MC.png</file>
+        <file>Images/flags/MD.png</file>
+        <file>Images/flags/ME.png</file>
+        <file>Images/flags/MF.png</file>
+        <file>Images/flags/MG.png</file>
+        <file>Images/flags/MH.png</file>
+        <file>Images/flags/MK.png</file>
+        <file>Images/flags/ML.png</file>
+        <file>Images/flags/MM.png</file>
+        <file>Images/flags/MN.png</file>
+        <file>Images/flags/MO.png</file>
+        <file>Images/flags/MP.png</file>
+        <file>Images/flags/MQ.png</file>
+        <file>Images/flags/MR.png</file>
+        <file>Images/flags/MS.png</file>
+        <file>Images/flags/MT.png</file>
+        <file>Images/flags/MU.png</file>
+        <file>Images/flags/MV.png</file>
+        <file>Images/flags/MW.png</file>
+        <file>Images/flags/MX.png</file>
+        <file>Images/flags/MY.png</file>
+        <file>Images/flags/MZ.png</file>
+        <file>Images/flags/NA.png</file>
+        <file>Images/flags/NC.png</file>
+        <file>Images/flags/NE.png</file>
+        <file>Images/flags/NF.png</file>
+        <file>Images/flags/NG.png</file>
+        <file>Images/flags/NI.png</file>
+        <file>Images/flags/NL.png</file>
+        <file>Images/flags/NO.png</file>
+        <file>Images/flags/NP.png</file>
+        <file>Images/flags/NR.png</file>
+        <file>Images/flags/NU.png</file>
+        <file>Images/flags/NZ.png</file>
+        <file>Images/flags/OM.png</file>
+        <file>Images/flags/PA.png</file>
+        <file>Images/flags/PE.png</file>
+        <file>Images/flags/PF.png</file>
+        <file>Images/flags/PG.png</file>
+        <file>Images/flags/PH.png</file>
+        <file>Images/flags/PK.png</file>
+        <file>Images/flags/PL.png</file>
+        <file>Images/flags/PN.png</file>
+        <file>Images/flags/PR.png</file>
+        <file>Images/flags/PS.png</file>
+        <file>Images/flags/PT.png</file>
+        <file>Images/flags/PW.png</file>
+        <file>Images/flags/PY.png</file>
+        <file>Images/flags/QA.png</file>
+        <file>Images/flags/RO.png</file>
+        <file>Images/flags/RS.png</file>
+        <file>Images/flags/RU.png</file>
+        <file>Images/flags/RW.png</file>
+        <file>Images/flags/SA.png</file>
+        <file>Images/flags/SB.png</file>
+        <file>Images/flags/SC.png</file>
+        <file>Images/flags/SD.png</file>
+        <file>Images/flags/SE.png</file>
+        <file>Images/flags/SG.png</file>
+        <file>Images/flags/SH.png</file>
+        <file>Images/flags/SI.png</file>
+        <file>Images/flags/SK.png</file>
+        <file>Images/flags/SL.png</file>
+        <file>Images/flags/SM.png</file>
+        <file>Images/flags/SN.png</file>
+        <file>Images/flags/SO.png</file>
+        <file>Images/flags/SR.png</file>
+        <file>Images/flags/SS.png</file>
+        <file>Images/flags/ST.png</file>
+        <file>Images/flags/SV.png</file>
+        <file>Images/flags/SY.png</file>
+        <file>Images/flags/SZ.png</file>
+        <file>Images/flags/TC.png</file>
+        <file>Images/flags/TD.png</file>
+        <file>Images/flags/TF.png</file>
+        <file>Images/flags/TG.png</file>
+        <file>Images/flags/TH.png</file>
+        <file>Images/flags/TJ.png</file>
+        <file>Images/flags/TK.png</file>
+        <file>Images/flags/TL.png</file>
+        <file>Images/flags/TM.png</file>
+        <file>Images/flags/TN.png</file>
+        <file>Images/flags/TO.png</file>
+        <file>Images/flags/TR.png</file>
+        <file>Images/flags/TT.png</file>
+        <file>Images/flags/TV.png</file>
+        <file>Images/flags/TW.png</file>
+        <file>Images/flags/TZ.png</file>
+        <file>Images/flags/UA.png</file>
+        <file>Images/flags/UG.png</file>
+        <file>Images/flags/US.png</file>
+        <file>Images/flags/UY.png</file>
+        <file>Images/flags/UZ.png</file>
+        <file>Images/flags/VA.png</file>
+        <file>Images/flags/VC.png</file>
+        <file>Images/flags/VE.png</file>
+        <file>Images/flags/VG.png</file>
+        <file>Images/flags/VI.png</file>
+        <file>Images/flags/VN.png</file>
+        <file>Images/flags/VU.png</file>
+        <file>Images/flags/WF.png</file>
+        <file>Images/flags/WS.png</file>
+        <file>Images/flags/YE.png</file>
+        <file>Images/flags/YT.png</file>
+        <file>Images/flags/ZA.png</file>
+        <file>Images/flags/ZM.png</file>
+        <file>Images/flags/ZW.png</file>
+    </qresource>
+    <qresource prefix="/">
+        <file>OneVPN.ico</file>
+    </qresource>
+</RCC>
