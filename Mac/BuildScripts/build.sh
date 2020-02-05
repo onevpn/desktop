@@ -2,7 +2,7 @@
 
 #brew install qt5
 #qt5path=($(brew --prefix qt5))
-qt5path="/Users/sergey/Qt5.8.0/5.8/clang_64/"
+qt5path="/Users/$USER/Qt5.9.0/5.9/clang_64/"
 sourceP=$(pwd)
 buildPath="$sourceP/OneVPN-build"
 sourcePath="$sourceP/../.."
@@ -26,10 +26,11 @@ $qt5path/bin/macdeployqt $appPath
 cp "$sourcePath/Mac/Info.plist" "$buildPath/"
 
 identity="Developer ID Application: GOLDEN SOFTWARE INC. (U8KD48QDBK)"
-codesign --deep "$appPath" -s $identity
+#codesign --deep "$appPath" -s $identity
 
+echo "$sourceP/installer/OneVPN.pkgproj"
 packagesbuild "$sourceP/installer/OneVPN.pkgproj" || exit 1
 
-productsign --sign "Developer ID Application: GOLDEN SOFTWARE INC. (U8KD48QDBK)" "$buildPath/OneVpn.mpkg" "$buildPath/OneVPN1.mpkg"
-rm -r "$buildPath/OneVpn.mpkg"
+#productsign --sign "Developer ID Application: GOLDEN SOFTWARE INC. (U8KD48QDBK)" "$buildPath/OneVpn.mpkg" "$buildPath/OneVPN1.mpkg"
+#rm -r "$buildPath/OneVpn.mpkg"
 mv "$buildPath/OneVPN1.mpkg" "$buildPath/OneVPN.mpkg"

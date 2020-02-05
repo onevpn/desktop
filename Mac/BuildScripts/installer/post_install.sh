@@ -17,7 +17,8 @@ installAgent()
 	fi
 	cp "$name" "$AGENTSDIR"
 	#sed -i '' "s/@USER@/$USER/" "$agentFile"
-	#chmod -x "$agentFile"
+	chmod -x "$agentFile"
+	sudo chown root "$agentFile" 
 	#chown "$USER" "$agentFile"
 
 	sudo launchctl load -F "$agentFile"
@@ -37,20 +38,20 @@ disableAgent()
     fi
 }
 
-sudo installer -pkg 'tuntap.pkg' -target /
+#sudo installer -pkg 'tuntap.pkg' -target /
 
 disableAgent "com.aaa.onevpn.OVPNHelper.plist"
 
-AGENTEXECDIR="/Library/PrivilegedHelperTools/"
+AGENTEXECDIR="/Library/Application Support/OneVPN/"
 if [ ! -d "$AGENTEXECDIR" ]; then
 	mkdir -p "$AGENTEXECDIR"
 	chown root "$AGENTSDIR"
 fi
 
 sudo cp "com.aaa.onevpn.OVPNHelper" "$AGENTEXECDIR"
-sudo cp "com.aaa.OneVPN.starter.plist" "$AGENTEXECDIR"
+sudo chmod a+x "$AGENTEXECDIR/com.aaa.onevpn.OVPNHelper"
 
-installAgent "com.aaa.OneVPN.starter.plist"
 installAgent "com.aaa.onevpn.OVPNHelper.plist"
+installAgent "com.aaa.OneVPN.starter.plist"
 
 runAgent "com.aaa.onevpn.OVPNHelper"

@@ -1,0 +1,58 @@
+<RCC>
+    <qresource prefix="/bg">
+        <file alias="premium-acc.png">OneVPN/bg/premium-acc.png</file>
+    </qresource>
+    <qresource prefix="/style">
+        <file alias="FormHaveAccount.qss">OneVPN/FormHaveAccount.qss</file>
+        <file alias="MainWindow.qss">OneVPN/MainWindow.qss</file>
+        <file alias="QMenu.qss">OneVPN/QMenu.qss</file>
+    </qresource>
+    <qresource prefix="/FormLogin">
+        <file alias="loginButton.png">OneVPN/loginButton.png</file>
+        <file alias="loginButtonNormal.png">OneVPN/loginButtonNormal.png</file>
+        <file alias="load.gif">OneVPN/load.gif</file>
+    </qresource>
+    <qresource prefix="/FormConnect">
+        <file alias="ON.png">OneVPN/FormConnect/ON.png</file>
+        <file alias="ON-hover.png">OneVPN/FormConnect/ON-hover.png</file>
+        <file alias="ON-pressed.png">OneVPN/FormConnect/ON-pressed.png</file>
+        <file alias="OFF.png">OneVPN/FormConnect/OFF.png</file>
+        <file alias="OFF-hover.png">OneVPN/FormConnect/OFF-hover.png</file>
+        <file alias="OFF-pressed.png">OneVPN/FormConnect/OFF-pressed.png</file>
+        <file alias="setting_off.png">OneVPN/FormConnect/setting_off.png</file>
+        <file alias="setting_on.png">OneVPN/FormConnect/setting_on.png</file>
+    </qresource>
+
+    <qresource prefix="/Preferences">
+        <file alias="account-off.png">OneVPN/Preferences/account-off.png</file>
+        <file alias="account-on.png">OneVPN/Preferences/account-on.png</file>
+        <file alias="general-off.png">OneVPN/Preferences/general-off.png</file>
+        <file alias="general-on.png">OneVPN/Preferences/general-on.png</file>
+        <file alias="connection-off.png">OneVPN/Preferences/connection-off.png</file>
+        <file alias="connection-on.png">OneVPN/Preferences/connection-on.png</file>
+        <file alias="black-list-off.png">OneVPN/Preferences/black-list-off.png</file>
+        <file alias="black-list-on.png">OneVPN/Preferences/black-list-on.png</file>
+        <file alias="wifi-list-off.png">OneVPN/Preferences/wifi-list-off.png</file>
+        <file alias="wifi-list-on.png">OneVPN/Preferences/wifi-list-on.png</file>
+        <file alias="account-off.png">OneVPN/Preferences/account-off.png</file>
+        <file alias="account-on.png">OneVPN/Preferences/account-on.png</file>
+        <file alias="close.png">OneVPN/Preferences/close.png</file>
+    </qresource>
+
+    <qresource prefix="/Common">
+        <file alias="checkbox_off.png">OneVPN/Common/checkbox_off.png</file>
+        <file alias="checkbox_on.png">OneVPN/Common/checkbox_on.png</file>
+        <file alias="combo_arrow_down_hover.png">OneVPN/Common/combo_arrow_down_hover.png</file>
+        <file alias="combo_arrow_down_normal.png">OneVPN/Common/combo_arrow_down_normal.png</file>
+        <file alias="radio-OFF.png">OneVPN/Common/radio-OFF.png</file>
+        <file alias="radio-ON.png">OneVPN/Common/radio-ON.png</file>
+        <file alias="radiopv2-top.png">OneVPN/Common/radiopv2-top.png</file>
+        <file alias="radiov2-bottom.png">OneVPN/Common/radiov2-bottom.png</file>
+    </qresource>
+    <qresource prefix="/MainWindow">
+        <file>OneVPN/button_connecting.gif</file>
+    </qresource>
+    <qresource prefix="/">
+        <file>AppIcon.ico</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,7 @@
+Script started on Tue Jun  5 10:47:41 2018
+command: /Users/s.kudaev/.lldb/MovaviFormatters.py
+/Users/s.kudaev/.lldb/MovaviFormatters.py: line 1: import: command not found
+/Users/s.kudaev/.lldb/MovaviFormatters.py: line 3: syntax error near unexpected token `('
+/Users/s.kudaev/.lldb/MovaviFormatters.py: line 3: `def ioPath_SummaryProvider(valobj, internal_dict):'
+
+Script done on Tue Jun  5 10:47:41 2018

@@ -3,12 +3,12 @@
 #include <QMessageBox>
 #include <QFileInfo>
 #include <QDir>
+#include <QDebug>
 
 OpenVPNConnectorQt *g_openVPNConnection = NULL;
 
 Connection::Connection(QObject *parent)
-    : QObject(parent)
-    , m_isConnected(false)
+    : AbstractConnection(parent)
 {
     qRegisterMetaType<OPENVPN_ERROR>("OPENVPN_ERROR");
 
@@ -44,7 +44,7 @@ void Connection::customEvent( QEvent *event )
 	}
 }*/
 
-bool Connection::connect( PROTOCOL protocol, QString serverIP, QString username, QString password , QString ovpnFile, QString l2tpKey, QStringList dns)
+bool Connection::connect(PROTOCOL protocol, QString serverIP, QString username, QString password, QString ovpnFile, QString l2tpKey)
 {
     if (protocol == OPENVPN)
 	{

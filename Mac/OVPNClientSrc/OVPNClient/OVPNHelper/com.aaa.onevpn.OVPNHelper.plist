@@ -11,8 +11,10 @@
 	</dict>
 	<key>ProgramArguments</key>
 	<array>
-		<string>/Library/PrivilegedHelperTools/com.aaa.onevpn.OVPNHelper</string>
+		<string>/Library/Application Support/OneVPN/com.aaa.onevpn.OVPNHelper</string>
 	</array>
+	<key>KeepAlive</key>
+	<true/>
 	<key>RunAtLoad</key>
 	<true/>
 	<key>Disabled</key>

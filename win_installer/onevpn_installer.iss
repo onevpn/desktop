@@ -2,7 +2,7 @@
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING INNO SETUP SCRIPT FILES!
 
 #define MyAppName "OneVPN"
-#define MyAppVersion "1.01"
+#define MyAppVersion "3.04"
 #define MyAppPublisher "OneVPN"
 #define MyAppURL "http://onevpn.co/"
 
@@ -21,7 +21,7 @@ AppUpdatesURL={#MyAppURL}
 DefaultDirName={pf}\{#MyAppName}
 DefaultGroupName={#MyAppName}
 ;OutputDir=C:\Work\LiquidVPN\installer
-OutputBaseFilename=onevpn_1_01
+OutputBaseFilename=onevpn_3_04
 ;SetupIconFile=VPNVantage.ico
 UninstallDisplayIcon={app}\uninstall.ico
 Compression=lzma
@@ -33,7 +33,7 @@ Name: "english"; MessagesFile: "compiler:Default.isl"
 
 [Files]
 Source: "uninstall.ico"; DestDir: "{app}"
-Source: "Files\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "..\install\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
 Source: "tap-windows-9.21.1.exe"; DestDir: "{app}"; AfterInstall: RunTapInstaller
 
 [Icons]
@@ -43,7 +43,8 @@ Name: "{group}\OneVPN"; Filename: "{app}\OneVPN.exe"; WorkingDir: "{app}"; IconF
 
 [Run]
 Filename: "sc"; Parameters: "create OneVPNService binPath= ""{app}\OneVPNService.exe"""
-Filename: "{app}\subinacl"; Parameters: "/SERVICE OneVPNService /grant={username}=F"
+Filename: "sc"; Parameters: "sdset OneVPNService ""D:(A;;CCLCSWRPWPDTLOCRRC;;;SY)(A;;CCDCLCSWRPWPDTLOCRSDRCWDWO;;;BA)(A;;CCLCSWLOCRRC;;;IU)(A;;CCLCSWLOCRRC;;;SU)(A;;RPWPCR;;;{code:GetUserSid})S:(AU;FA;CCDCLCSWRPWPDTLOCRSDRCWDWO;;;WD)"""
+;Filename: "{app}\subinacl"; Parameters: "/SERVICE OneVPNService /grant={username}=F"
 
 [Tasks]
 Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{cm:AdditionalIcons}"
@@ -54,6 +55,32 @@ Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{
 [Code]
 
 #include "services_unicode.iss"
+
+function GetUserSid(ExecStdout: string):string;
+var
+  TmpFileName: string;
+  ResultCode: integer;
+  Params: string;
+  whiteSpacePos: integer;
+  sid: string;
+
+  begin
+    TmpFileName := ExpandConstant('{tmp}') + '\sid_results.txt';
+    Exec(ExpandConstant('{cmd}'), ' /C whoami /user /nh > "' + TmpFileName + '"', '', SW_SHOW, ewWaitUntilTerminated, ResultCode);
+
+    if LoadStringFromFile(TmpFileName, ExecStdout) then 
+      begin
+        whiteSpacePos := pos (' ', ExecStdout);
+        sid := copy(ExecStdout, whiteSpacePos + 1, length(ExecStdout) - 1)    
+        {MsgBox(ExecStdout, mbInformation, MB_OK);}
+        result := Trim(sid)
+      end
+      else
+        begin
+        MsgBox('Installing Error', mbError, MB_OK);
+        end;
+    DeleteFile(TmpFileName);
+end;
 
 procedure RunTapInstaller;
 var
@@ -72,8 +99,6 @@ begin
   case CurUninstallStep of
     usUninstall:
       begin
-        SimpleStopService('OneVPNService', true, true); 
-        SimpleDeleteService('OneVPNService');
       end;
     usPostUninstall:
       begin

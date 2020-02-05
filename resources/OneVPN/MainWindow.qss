@@ -1,0 +1,170 @@
+MMainWindow                                  { background: #313740; min-width: 400px; min-height: 280px; max-width: 400px; max-height: 280px; }
+
+MMainWindow *[styleHint="header"]            { background: #2F343E; min-height: 50px; color: #FFFFFF; font-size: 24px; }
+
+/**FormHaveAccount**/
+FormHaveAccount QToolButton                  { min-height: 45px; max-height: 45px; min-width: 70px; background: transparent; color: white; font-size: 15px; }
+FormHaveAccount QToolButton:hover            { color: #22DAA1; }
+FormHaveAccount QToolButton:pressed          { color: #0CC8C6; }
+FormHaveAccount #already                     { color: #676F86; font-size: 14px; }
+FormHaveAccount #line                        { background: #373F4B }
+
+/**FormLogin**/
+FormLogin #tbSignUp,
+FormLogin #tbForgotPassword,
+FormLogin QLabel,
+FormLogin QCheckBox                          { background: transparent; border: 0px; color: #7C85A2; }
+
+FormLogin #tbSignUp                          { font-size: 16px; }
+
+FormLogin QLineEdit                          { background: transparent; color: white; font-size: 16px }
+
+FormLogin #email,
+FormLogin #password                          { font-size: 16px; }
+
+FormLogin QCheckBox                          { font-size: 14px; color: #7c85a2; }
+FormLogin QCheckBox:indicator                { min-width: 16px; max-width: 16px; min-height: 16px; max-height: 16px; }
+FormLogin QCheckBox:indicator:checked        { image: url(":/Common/radio-ON.png") }
+FormLogin QCheckBox:indicator:unchecked      { image: url(":/Common/radio-OFF.png") }
+
+FormLogin #tbForgotPassword                  { font-size: 12px; }
+
+FormLogin #headerLabel                       { color: white; font-size: 16px; }
+
+FormLogin *[styleHint="line"]                { background: black; border: none; min-height: 1px; max-height: 1px; }
+
+FormLogin #tbAccept                          { min-height: 38px; max-height: 38px; min-width: 122px; font-size: 18px; color: white; }
+FormLogin #tbAccept                          { border-image: url(:/FormLogin/loginButtonNormal.png); }
+FormLogin #tbAccept:pressed                  { border-image: url(:/FormLogin/loginButton.png); }
+FormLogin #tbAccept[styleHint="accessible"]  { border-image: url(:/FormLogin/loginButton.png); }
+
+FormLogin #waitLabel                         { background: transparent }
+
+FormLogin #tbSignUp:hover,
+FormLogin #tbForgotPassword:hover            { color: #22DAA1; }
+
+FormLogin #tbSignUp:pressed,
+FormLogin #tbForgotPassword:pressed          { color: #0CC8C6; }
+
+FormLogin #failLabel                         { min-height: 18px; max-height: 18px; font-size: 14px; color: rgb(184, 87, 88); }
+FormLogin #failLine                          { min-height: 1px; max-height: 1px; background-color: rgb(184, 87, 88); }
+
+/* FormConnect */
+FormConnect #tbConnect                       { min-width: 213px; max-width: 213px; min-height: 213px; max-height: 213px; }
+
+FormConnect #tbConnect                       { border-image: url(:/FormConnect/OFF.png)  }
+FormConnect #tbConnect:hover                 { border-image: url(:/FormConnect/OFF-hover.png)  }
+FormConnect #tbConnect:pressed               { border-image: url(:/FormConnect/OFF-pressed.png)  }
+
+FormConnect #tbConnect[styleHint="conn"]     { border-image: url(:/FormConnect/ON.png)  }
+FormConnect #tbConnect[styleHint="conn"]:hover { border-image: url(:/FormConnect/ON-hover.png)  }
+FormConnect #tbConnect[styleHint="conn"]:pressed { border-image: url(:/FormConnect/ON-pressed.png)  }
+
+FormConnect *[styleHint="hint"]              { font-size: 16px; color: #5B6277; }
+FormConnect #lblIP                           { font-size: 16px; color: white; }
+
+FormConnect #tbSettings                      { min-width: 20px; max-width: 20px; min-height: 20px; max-height: 20px; border-image: url(:/FormConnect/setting_off.png);  }
+FormConnect #tbSettings[styleHint="on"]      { border-image: url(:/FormConnect/setting_on.png); }
+
+FormConnect #tbSettings::menu-indicator      { image: none; }
+
+FormConnect #headerFrame                     { max-height: 50px; }
+
+FormConnect *[styleHint="line"]              { background: #2B3039; border: none; min-width: 1px; max-width: 1px; }
+
+FormConnect #paranoic:indicator              { min-width: 30px; max-width: 30px; min-height: 12px; max-height: 12px; background-repeat: no-repeat; background-position: center center; }
+FormConnect #paranoic:indicator              { background-image: url(:/Common/checkbox_off.png); }
+FormConnect #paranoic:indicator:checked      { background-image: url(:/Common/checkbox_on.png); }
+
+FormConnect #onLabel,
+FormConnect #offLabel                        { color: white; }
+
+FormConnect #onLabel[styleHint="inState"],
+FormConnect #offLabel[styleHint="inState"]   { color: #89919d; }
+
+FormConnect #cbServer                        { background-color: transparent; color: #89919d; font-size: 14px; border: none; min-width: 207px; max-width: 207px; }
+
+FormConnect #cbServer QAbstractItemView      {  color: #89919d; background-color: #373F4C; }
+FormConnect #cbServer QAbstractItemView:item { min-width: 207px; max-width: 207px; min-height: 44px; max-height: 44px; border-bottom: 1px solid #343A46; background-color: #373F4C; color: #89919d; font-size: 14px; }
+FormConnect #cbServer QAbstractItemView:item:hover { background-color: #424F64; color: #89919d; }
+
+FormConnect #cbServer::down-arrow            { image: none; border: none; background: transparent; }
+FormConnect #cbServer::drop-down             { border: none; min-width: 12px; max-width: 12px; min-height: 12px; max-height: 12px; }
+FormConnect #cbServer::drop-down                 { border-image: url(:/Common/combo_arrow_down_normal.png); }
+FormConnect #cbServer::drop-down:hover:!pressed  { border-image: url(:/Common/combo_arrow_down_hover.png); }
+
+FormConnect #tbSettings::menu-indicator      { image: none; }
+FormConnect #tbSettings::menu-button         { image: none; }
+
+
+/* Preferences */
+Preferences #headerFrame QToolButton[styleHint="tab"] { min-height: 32px; max-height: 32px; }
+
+Preferences #general                         { min-width: 48px; max-width: 48px; }
+Preferences #general:checked                 { border-image: url(:/Preferences/general-on.png); }
+Preferences #general                         { border-image: url(:/Preferences/general-off.png); }
+
+Preferences #connection                      { min-width: 57px; max-width: 57px; }
+Preferences #connection:checked              { border-image: url(:/Preferences/connection-on.png); }
+Preferences #connection                      { border-image: url(:/Preferences/connection-off.png); }
+
+Preferences #blackList                       { min-width: 75px; max-width: 75px; }
+Preferences #blackList:checked               { border-image: url(:/Preferences/black-list-on.png); }
+Preferences #blackList                       { border-image: url(:/Preferences/black-list-off.png); }
+
+Preferences #wifi                            { min-width: 41px; max-width: 41px; }
+Preferences #wifi:checked                    { border-image: url(:/Preferences/wifi-list-on.png); }
+Preferences #wifi                            { border-image: url(:/Preferences/wifi-list-off.png); }
+
+Preferences #account                         { min-width: 52px; max-width: 52px; }
+Preferences #account:checked                 { border-image: url(:/Preferences/account-on.png); }
+Preferences #account                         { border-image: url(:/Preferences/account-off.png); }
+
+Preferences #close                           { min-width: 20px; max-width: 20px; min-height: 20px; max-height: 20px; }
+Preferences #close                           { border-image: url(:/Preferences/close.png); }
+
+Preferences #save                            { min-height: 38px; max-height: 38px; min-width: 122px; font-size: 18px; color: white; }
+Preferences #save                            { border-image: url(:/FormLogin/loginButtonNormal.png); }
+Preferences #save:pressed                    { border-image: url(:/FormLogin/loginButton.png); }
+
+Preferences #generalPage QRadioButton        { font-size: 14px; color: #7c85a2; }
+Preferences #generalPage QRadioButton:indicator { min-width: 16px; max-width: 16px; min-height: 16px; max-height: 16px; }
+Preferences #generalPage QRadioButton:indicator:checked { image: url(":/Common/radio-ON.png") }
+Preferences #generalPage QRadioButton:indicator:unchecked { image: url(":/Common/radio-OFF.png") }
+
+Preferences #generalPage QCheckBox        { font-size: 14px; color: #7c85a2; }
+Preferences #generalPage QCheckBox:indicator { min-width: 16px; max-width: 16px; min-height: 16px; max-height: 16px; }
+Preferences #generalPage QCheckBox:indicator:checked { image: url(":/Common/radio-ON.png") }
+Preferences #generalPage QCheckBox:indicator:unchecked { image: url(":/Common/radio-OFF.png") }
+
+Preferences #freeTrial[styleHint="trial"]    { font-size: 14px; color: #7c85a2; }
+Preferences #freeTrial[styleHint="activated"]{ font-size: 14px; color: white; }
+Preferences #daysTrial                       { font-size: 14px; color: white; text-decoration: underline; }
+
+Preferences #upgradeLabel[styleHint="trial"]     { font-size: 14px; color: #22DAA1; }
+Preferences #upgradeLabel[styleHint="activated"] { font-size: 14px; color: black; }
+
+Preferences #groupBox                        { padding-left: 20px; }
+
+Preferences #groupBox[styleHint="trial"]     { background-color: #2B2F36; }
+Preferences #groupBox[styleHint="activated"] { border-image: url(":/bg/premium-acc.png"); }
+
+Preferences #connectionPage QLabel           { font-size: 14px; color: #7c85a2; }
+
+Preferences #selectServerLocation:indicator  { min-width: 16px; max-width: 16px; min-height: 40px; max-height: 40px; }
+Preferences #selectServerLocation:indicator:checked { image: url(":/Common/radiopv2-top.png"); }
+Preferences #selectServerLocation:indicator:unchecked { image: url(":/Common/radiov2-bottom.png"); }
+
+Preferences #unprotectedWifi                     { min-width: 16px; max-width: 16px; min-height: 16px; max-height: 16px; }
+Preferences #unprotectedWifi:indicator:checked   { image: url(":/Common/radio-ON.png") }
+Preferences #unprotectedWifi:indicator:unchecked { image: url(":/Common/radio-OFF.png") }
+
+Preferences #connectionPage QComboBox            { font-size: 14px; color: #7c85a2; margin-right: 15px; background: transparent; border-bottom: 1px solid black; }
+Preferences #connectionPage QComboBox QAbstractItemView      { color: #89919d; background-color: #373F4C; }
+Preferences #connectionPage QComboBox QAbstractItemView:item { border-bottom: 1px solid #343A46; background-color: #373F4C; color: #89919d; font-size: 14px; }
+Preferences #connectionPage QComboBox QAbstractItemView:item:hover { background-color: #424F64; color: #89919d; }
+
+Preferences #versionLabel                    { font-size: 14px; color: #4F5566; }
+
+TrayPopover                                                { background: #313740; min-width: 400px; min-height: 320px; max-width: 400px; max-height: 320px; }
+TrayPopover FormConnect #tbSettings                        { min-height: 0px; max-height: 0px; }

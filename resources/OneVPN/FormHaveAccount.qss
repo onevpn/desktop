@@ -1,0 +1,5 @@
+#FormHaveAccount                 { background-image: url(:/MainWindow/background.png); min-width: 400px; min-height: 280px; max-width: 400px; max-height: 280px; }
+#FormHaveAccount #invitation     { background: #2F343E; min-height: 50px; color: #FFFFFF; font-size: 24px; }
+#FormHaveAccount QToolButton     { min-height: 45px; max-height: 45px; min-width: 70px; background: transparent; color: white; font-size: 15px; }
+#FormHaveAccount #already        { color: #676F86; font-size: 14px; }
+#FormHaveAccount #line           { background: #373F4B }

@@ -1,7 +1,9 @@
 #include <windows.h>
+#include <vector>
+#include <string>
 
-#define SERVICE_NAME  (L"OneVPNService")
-#define SERVICE_PIPE_NAME  (L"\\\\.\\pipe\\OneVPNService")
+#define SERVICE_NAME  ("OneVPNService")
+#define SERVICE_PIPE_NAME  ("\\\\.\\pipe\\OneVPNService")
 
 SERVICE_STATUS        g_ServiceStatus = {0};
 SERVICE_STATUS_HANDLE g_StatusHandle = NULL;
@@ -24,6 +26,16 @@ struct MessagePacketResult
     DWORD exitCode;
 };
 #pragma pack(pop)
+
+static std::string utf16ToUTF8(const std::wstring &s)
+{
+	const int size = ::WideCharToMultiByte(CP_UTF8, 0, s.c_str(), -1, NULL, 0, 0, NULL);
+
+	std::vector<char> buf(size);
+	::WideCharToMultiByte(CP_UTF8, 0, s.c_str(), -1, &buf[0], size, 0, NULL);
+
+	return std::string(&buf[0]);
+}
 
 int main(int argc, char *argv[])
 {
@@ -239,7 +251,10 @@ DWORD WINAPI serviceWorkerThread (LPVOID lpParam)
                 ZeroMemory( &si, sizeof(si) );
                 si.cb = sizeof(si);
                 ZeroMemory( &pi, sizeof(pi) );
-                if (CreateProcess(NULL, packet.szCommandLine, NULL, NULL, FALSE, 0, NULL, NULL, &si, &pi))
+
+				std::string szCommandLine(utf16ToUTF8(packet.szCommandLine));
+				LPSTR lpStr = (LPSTR)szCommandLine.c_str();
+                if (CreateProcess(NULL, lpStr, NULL, NULL, FALSE, 0, NULL, NULL, &si, &pi))
                 {
                     DWORD exitCode;
                     if (packet.blocking)
