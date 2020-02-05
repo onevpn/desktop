@@ -1,4 +1,4 @@
-#include "../platformutils.h"
+#include "platformutils.h"
 
 void hideFromDock()
 {

@@ -230,7 +230,7 @@ void OpenVPNConnectorQt::run()
             {
                 char message[1024];
                 sprintf(message, "username \"Auth\" %s\n", username_.toUtf8().data());
-                qDebug() << "<<<<<< Auth username: " << message;
+                qDebug() << "\n\n\n\<<<<<< Auth username: " << message << "\n\n\n";
                 sendAll(socketOpenVPN, message, strlen(message));
             }
             else if (strServerReply.contains("'Auth' username entered, but not yet verified", Qt::CaseInsensitive))
@@ -316,6 +316,13 @@ void OpenVPNConnectorQt::run()
                                 pr.waitForFinished();
                             }
                         }
+                    }
+
+                    {
+                        QProcess pr;
+                        pr.start("onevpnhelperdnsresolver", QStringList());
+                        pr.waitForFinished();
+
                     }
 
                     emit connected();

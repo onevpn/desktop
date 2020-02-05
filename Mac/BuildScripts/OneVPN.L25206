@@ -1,0 +1,83 @@
+
+client
+
+dev tun
+
+resolv-retry infinite
+
+nobind
+
+persist-key
+
+persist-tun
+<ca>
+-----BEGIN CERTIFICATE-----
+MIIDMTCCApqgAwIBAgIJAMPC+pmu0WnoMA0GCSqGSIb3DQEBBQUAMG8xCzAJBgNV
+BAYTAktHMQ8wDQYDVQQIEwZCRUxJWkUxDzANBgNVBAcTBkJFTElaRTELMAkGA1UE
+ChMCLS0xDjAMBgNVBAMTBS0tIENBMSEwHwYJKoZIhvcNAQkBFhJtZUBteWhvc3Qu
+bXlkb21haW4wHhcNMTUwNzI5MTIxMzE4WhcNMjUwNzI2MTIxMzE4WjBvMQswCQYD
+VQQGEwJLRzEPMA0GA1UECBMGQkVMSVpFMQ8wDQYDVQQHEwZCRUxJWkUxCzAJBgNV
+BAoTAi0tMQ4wDAYDVQQDEwUtLSBDQTEhMB8GCSqGSIb3DQEJARYSbWVAbXlob3N0
+Lm15ZG9tYWluMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCcGl9/4OSt/WbI
+Sslb3UcRQvs/JjiHHPkMPKKHKLbZXzYpLBumFgsHsIdVkEBpehHYAymaMaj6F+hd
+nODUofHoagKYHFFBilpuRoYjnaNmkqOiQhCqMliaRcuEtxq19FMztxT9JTs9DAek
+IMjMyMF3L86dmYwkJ/jKIXK67qY1HwIDAQABo4HUMIHRMB0GA1UdDgQWBBRR2+nk
+PUN7h14AUtSlYFh9USl4JzCBoQYDVR0jBIGZMIGWgBRR2+nkPUN7h14AUtSlYFh9
+USl4J6FzpHEwbzELMAkGA1UEBhMCS0cxDzANBgNVBAgTBkJFTElaRTEPMA0GA1UE
+BxMGQkVMSVpFMQswCQYDVQQKEwItLTEOMAwGA1UEAxMFLS0gQ0ExITAfBgkqhkiG
+9w0BCQEWEm1lQG15aG9zdC5teWRvbWFpboIJAMPC+pmu0WnoMAwGA1UdEwQFMAMB
+Af8wDQYJKoZIhvcNAQEFBQADgYEAfOczifErbKnzVe58X1EsFn3yOt+lU+PtlQ4j
+E0guEaACEaygYgpvjTKHnHJ+IJRdPwZXy1fn07vuFJEl/aOzIMF4CXVuNQnHkvX8
+UCCP9Eij2EKZGRAGQpImA1XYEzgM3XU0uDNjh7a9VlZCD3wujjwiv51A/16xWbMe
+MHYMbOU=
+-----END CERTIFICATE-----
+</ca>
+tls-client
+
+key-direction 1
+<tls-auth>
+#
+# 2048 bit OpenVPN static key
+#
+-----BEGIN OpenVPN Static key V1-----
+7a0536a566c3f7981c18f5b633694243
+958a70e532a820bd11d2eea81616c3bc
+c26b0723f521bcf624dac4632d25c897
+db14dd664e0964044d648231c124f046
+14f8e6b6c3e8019cef34287156575a8a
+c60a6899ce90bf2d5e750b4162d8028c
+92bf0375d67d14e8c1f664b1743c5529
+b69e389f51d018a4a79635e3caa7c9d3
+3897d53d1beab51523e13e34231161cd
+5b90d4b3dc0f6146e9a95e16139ce17b
+5c9876b35a919045bf2d4172ec86bfe8
+6e857ae7edc4ce52cc1afac1eb66e95c
+a690834b5a8b6e94abe4e02a810c567d
+bdecc54f293aa3c220b075def0dcb483
+da79a0e512223b1621e1c9b0b32f4c59
+72fe8ff4ea27d07061128f8924b74674
+-----END OpenVPN Static key V1-----
+</tls-auth>
+verb 3
+
+auth SHA1
+
+cipher BF-CBC
+
+remote-cert-tls server
+
+keepalive 10 120
+
+auth-user-pass
+
+auth-nocache
+
+reneg-sec 0
+proto udp
+remote nl-03.onevpn.co 1194
+auth-user-pass
+script-security 2
+push "dhcp-option DNS 8.8.8.8"
+push "dhcp-option DNS 8.8.4.4"
+up /Applications/OneVPN.app/Contents/MacOS/../Resources/tap-up-down.sh
+down /Applications/OneVPN.app/Contents/MacOS/../Resources/tap-up-down.sh

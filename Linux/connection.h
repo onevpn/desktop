@@ -1,31 +1,30 @@
 #ifndef CONNECTION_H
 #define CONNECTION_H
 
-#include "../utils.h"
+#include "utils.h"
 #include "openvpnconnectorqt.h"
+#include "Interfaces/AbstractConnection.h"
 
-class Connection : public QObject
+class Connection : public AbstractConnection
 {
 	Q_OBJECT
 
 public:
-	Connection(QObject *parent);
+    Connection(QObject *parent = nullptr);
 	~Connection();
 
-	bool initialize();
-    bool connect(PROTOCOL protocol, QString serverIP, QString username, QString password, QString ovpnFile, QString l2tpKey, QStringList dns);
-    void disconnect();
-	bool tapInstalled();
+    bool initialize() override;
+    bool connect(PROTOCOL protocol
+                 , QString serverIP
+                 , QString username
+                 , QString password
+                 , QString ovpnFile
+                 , QString l2tpKey) override;
 
-    bool isConnected() const { return m_isConnected; }
+    void disconnect() override;
+    bool tapInstalled() override;
+    bool isConnected() const override { return m_isConnected; }
 	
-signals:
-	void connected();
-    void disconnected();
-    void error(const QString &error);
-    void log(const QString &logStr);
-    void statisticsChanged(quint64 download, quint64 upload);
-
 protected:
     //void customEvent(QEvent *event);
     //void timerEvent(QTimerEvent *event);
@@ -38,7 +37,7 @@ private slots:
 
 private:
 	enum {UM_CONNECTED = 1001, UM_ERROR = 1002};
-    bool m_isConnected;
+    bool m_isConnected = false;
 
     /*HRASCONN connHandle_;
 	int	timerId_;

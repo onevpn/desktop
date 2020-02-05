@@ -1,0 +1,1043 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		B0F3478D0243C03943566F78 /* Qt Preprocess */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 6CC3B5D2136C7CD6A5CF5A59 /* Build configuration list for PBXNativeTarget "OneVPN" */;
+			buildPhases = (
+				5E618435888B9D49F8540165 /* Qt Qmake */,
+				7EF0942E79C014DCEC8976BC /* Qt Preprocessors */,
+			);
+			dependencies = (
+			);
+			name = "Qt Preprocess";
+			productName = "Qt Preprocess";
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		0078E0708AC91777560A33F7 /* formloginwaitanimation.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 0DC76ECF38DB73089F89DC0B /* formloginwaitanimation.cpp */; settings = {ATTRIBUTES = (); }; };
+		03D4C7B74B098D95ACDE467E /* flagsresource.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = E013BE998AB3E39A2D395A3E /* flagsresource.cpp */; settings = {ATTRIBUTES = (); }; };
+		055680E1BDDCA26E0F8A281E /* getmyip.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = BA0944342BD9A39BCA588D3C /* getmyip.cpp */; settings = {ATTRIBUTES = (); }; };
+		0DF2828C5383FCB13998281A /* singleinstance.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = DAAC6E92ED711A844C7E3199 /* singleinstance.cpp */; settings = {ATTRIBUTES = (); }; };
+		15364689D2AB5A30E87A689F /* Security.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 205259EEEE2BADA5E64741E3 /* Security.framework */; };
+		188AF0A22932AD6C47353DF2 /* preferences.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = E999F7928B0551CB9FAD42E5 /* preferences.cpp */; settings = {ATTRIBUTES = (); }; };
+		18D4508DAA48DC37B4BB686B /* formlogin.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = C63C5365F1C6E06020C8D4D4 /* formlogin.cpp */; settings = {ATTRIBUTES = (); }; };
+		1F09ED024FD467DEE5AB88E5 /* dialogrestoreinternet.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = EC418E5AD9B8A0F596CC4DC8 /* dialogrestoreinternet.cpp */; settings = {ATTRIBUTES = (); }; };
+		270B73052C6D59E8A2338F4A /* showlog.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 268E3E1C14AEF6EF076671A2 /* showlog.cpp */; settings = {ATTRIBUTES = (); }; };
+		2A53C18999F087523D8C78F2 /* QtCore.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 5CA55EBA3DB42DA7E0AC4810 /* QtCore.framework */; };
+		38B42A0819EFC2D6C31F0B01 /* formhaveaccount.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 5AEB3AD609E1BB3A668BEF9F /* formhaveaccount.cpp */; settings = {ATTRIBUTES = (); }; };
+		4CFD321423426B236D636CA8 /* utils.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 078F5B89B2FFDB944705B059 /* utils.cpp */; settings = {ATTRIBUTES = (); }; };
+		52846310C9D9C60DED1E4269 /* animatedbutton.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 3D21307178740CF3ED705C93 /* animatedbutton.cpp */; settings = {ATTRIBUTES = (); }; };
+		54283C14EE0E186B41931DD3 /* ServiceManagement.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = C9684485977FE3407219F6E3 /* ServiceManagement.framework */; };
+		60146F6C3747C310FD5AFC47 /* dnsleaks.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = E185100563F32FC24A035682 /* dnsleaks.cpp */; settings = {ATTRIBUTES = (); }; };
+		625E060D7C51006BD60E2DFA /* OpenVPNConnectorQt.mm in Compile Sources */ = {isa = PBXBuildFile; fileRef = 3896704562AFCD0FC9DF52B8 /* OpenVPNConnectorQt.mm */; settings = {ATTRIBUTES = (); }; };
+		668DDDA0C55405E7FCFD6CA5 /* CoreServices.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 9742F24EE18EA44D52824F1E /* CoreServices.framework */; };
+		6BD243017EF5E681BE808656 /* qrc_mainwindow.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = FA31D8B5A7C686BD22CCA84E /* qrc_mainwindow.cpp */; settings = {ATTRIBUTES = (); }; };
+		6D55D2BB9B3492F5EF9CE2D6 /* QtNetwork.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 02A00AFFA7BA13A68C785366 /* QtNetwork.framework */; };
+		6F53DB941C55AD759012E835 /* platformutils.mm in Compile Sources */ = {isa = PBXBuildFile; fileRef = D0825ABE5619D2921EAE7D4D /* platformutils.mm */; settings = {ATTRIBUTES = (); }; };
+		7F7D2299A094BF49C063B4DA /* log.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = A24155A5F67654F672B1DFE5 /* log.cpp */; settings = {ATTRIBUTES = (); }; };
+		83BFD4D2C698693AE99055C7 /* formconnect.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = A87470643CA1EFD2A4F3F13E /* formconnect.cpp */; settings = {ATTRIBUTES = (); }; };
+		8771A8C96E9C391044035D99 /* OpenGL.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = D4B32C2222F82AC56BADEB21 /* OpenGL.framework */; };
+		87ECCF0B09515A43AB5EA177 /* main.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 2A5723FF6A66B7C68E414B69 /* main.cpp */; settings = {ATTRIBUTES = (); }; };
+		8D267F2E4776F0ECA2F49DC8 /* IOKit.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = A1A67BEAA744704B29168D39 /* IOKit.framework */; };
+		918BD8130CD92AAC5FC3A26B /* serverapi.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 8AA58D16E28A19E041E1EB7E /* serverapi.cpp */; settings = {ATTRIBUTES = (); }; };
+		A014B958FC821CEF4C3134B4 /* OpenVPNConnector.mm in Compile Sources */ = {isa = PBXBuildFile; fileRef = F3854A122E09C5C062835300 /* OpenVPNConnector.mm */; settings = {ATTRIBUTES = (); }; };
+		A503F3A71F19083A0025555F /* Updater.mm in Compile Sources */ = {isa = PBXBuildFile; fileRef = A503F3A61F19083A0025555F /* Updater.mm */; };
+		A52D406C1F21247D009255F2 /* Dispatcher.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = A52D40651F21247D009255F2 /* Dispatcher.cpp */; };
+		A52D406D1F21247D009255F2 /* Subscriber.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = A52D406A1F21247D009255F2 /* Subscriber.cpp */; };
+		A52D40711F2124B1009255F2 /* VPNConnection.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = A52D406F1F2124B1009255F2 /* VPNConnection.cpp */; };
+		A52D40791F212D82009255F2 /* Connection.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = A52D40771F212D82009255F2 /* Connection.cpp */; };
+		A52D407C1F212F38009255F2 /* ConnectionFactory.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = A52D407B1F212F38009255F2 /* ConnectionFactory.cpp */; };
+		A530238E1F23DFAA0071A8DD /* .cpp in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = A53023771F23DFAA0071A8DD /* .cpp */; };
+		A530238F1F23DFAA0071A8DD /* moc_AbstractConnection.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = A53023781F23DFAA0071A8DD /* moc_AbstractConnection.cpp */; };
+		A53023901F23DFAA0071A8DD /* moc_AnimatedButton.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = A53023791F23DFAA0071A8DD /* moc_AnimatedButton.cpp */; };
+		A53023911F23DFAA0071A8DD /* moc_Connection.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = A530237A1F23DFAA0071A8DD /* moc_Connection.cpp */; };
+		A53023921F23DFAA0071A8DD /* moc_dialogrestoreinternet.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = A530237B1F23DFAA0071A8DD /* moc_dialogrestoreinternet.cpp */; };
+		A53023931F23DFAA0071A8DD /* moc_dialogsettings.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = A530237C1F23DFAA0071A8DD /* moc_dialogsettings.cpp */; };
+		A53023941F23DFAA0071A8DD /* moc_formconnect.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = A530237D1F23DFAA0071A8DD /* moc_formconnect.cpp */; };
+		A53023951F23DFAA0071A8DD /* moc_formhaveaccount.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = A530237E1F23DFAA0071A8DD /* moc_formhaveaccount.cpp */; };
+		A53023961F23DFAA0071A8DD /* moc_formlogin.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = A530237F1F23DFAA0071A8DD /* moc_formlogin.cpp */; };
+		A53023971F23DFAA0071A8DD /* moc_formloginwaitanimation.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = A53023801F23DFAA0071A8DD /* moc_formloginwaitanimation.cpp */; };
+		A53023981F23DFAA0071A8DD /* moc_getmyip.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = A53023811F23DFAA0071A8DD /* moc_getmyip.cpp */; };
+		A53023991F23DFAA0071A8DD /* moc_killswitch.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = A53023821F23DFAA0071A8DD /* moc_killswitch.cpp */; };
+		A530239A1F23DFAA0071A8DD /* moc_mmainwindow.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = A53023831F23DFAA0071A8DD /* moc_mmainwindow.cpp */; };
+		A530239B1F23DFAA0071A8DD /* moc_OpenVPNConnectorQt.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = A53023841F23DFAA0071A8DD /* moc_OpenVPNConnectorQt.cpp */; };
+		A530239C1F23DFAA0071A8DD /* moc_ovpnconfig.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = A53023851F23DFAA0071A8DD /* moc_ovpnconfig.cpp */; };
+		A530239D1F23DFAA0071A8DD /* moc_paranoik.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = A53023861F23DFAA0071A8DD /* moc_paranoik.cpp */; };
+		A530239E1F23DFAA0071A8DD /* moc_preferences.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = A53023881F23DFAA0071A8DD /* moc_preferences.cpp */; };
+		A530239F1F23DFAA0071A8DD /* moc_serverapi.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = A53023891F23DFAA0071A8DD /* moc_serverapi.cpp */; };
+		A53023A01F23DFAA0071A8DD /* moc_serversmodel.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = A530238A1F23DFAA0071A8DD /* moc_serversmodel.cpp */; };
+		A53023A11F23DFAA0071A8DD /* moc_showlog.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = A530238B1F23DFAA0071A8DD /* moc_showlog.cpp */; };
+		A53023A21F23DFAA0071A8DD /* moc_singleinstance.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = A530238C1F23DFAA0071A8DD /* moc_singleinstance.cpp */; };
+		A53023A31F23DFAA0071A8DD /* moc_sleeppreventor.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = A530238D1F23DFAA0071A8DD /* moc_sleeppreventor.cpp */; };
+		A53023A51F23E0290071A8DD /* moc_VPNConnection.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = A53023A41F23E0290071A8DD /* moc_VPNConnection.cpp */; };
+		A544A40D1F17E6F300538F97 /* Sparkle.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = A544A40C1F17E6F300538F97 /* Sparkle.framework */; };
+		A544A4101F17E87700538F97 /* Sparkle.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = A544A40F1F17E87700538F97 /* Sparkle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A544A4161F17EBCD00538F97 /* dsa_pub.pem in CopyFiles */ = {isa = PBXBuildFile; fileRef = A544A4151F17EBCD00538F97 /* dsa_pub.pem */; };
+		A5D9427D1F08CFDC004C348D /* Fabric.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = A5D9427B1F08CFDC004C348D /* Fabric.framework */; };
+		A5D9427E1F08CFDC004C348D /* Crashlytics.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = A5D9427C1F08CFDC004C348D /* Crashlytics.framework */; };
+		A5F684991F08B56D00C89515 /* libc++.dylib in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = A5F684951F08B56C00C89515 /* libc++.dylib */; };
+		A5F6849A1F08B56D00C89515 /* libz.dylib in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = A5F684961F08B56C00C89515 /* libz.dylib */; };
+		A5F6849F1F08B5B300C89515 /* CrashlyticsImpl.mm in Compile Sources */ = {isa = PBXBuildFile; fileRef = A5F6849D1F08B5B300C89515 /* CrashlyticsImpl.mm */; };
+		A7E69B306AC554E8A4A6DCF7 /* killswitch.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 97816669071D7117D24FE8D0 /* killswitch.cpp */; settings = {ATTRIBUTES = (); }; };
+		A99B2AA0F9CBBDD12BA126A4 /* DiskArbitration.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 2B774D8E4178765CE52EAAF5 /* DiskArbitration.framework */; };
+		B1172B728FE926981A796BEA /* mmainwindow.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = E04CF1B2B350443FDC5088E3 /* mmainwindow.cpp */; settings = {ATTRIBUTES = (); }; };
+		CA88567038B79302497CD4C2 /* QtGui.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = F0507124AF32159122A34956 /* QtGui.framework */; };
+		CB847049A81A3BB5BB4A9D4B /* ovpnconfig.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = F5B8D54F3ABD2C812329B750 /* ovpnconfig.cpp */; settings = {ATTRIBUTES = (); }; };
+		D4639595C3BCF2A39D88DF6E /* SystemConfiguration.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = FF5BDAB0076F3391B219EA52 /* SystemConfiguration.framework */; };
+		E167298FD80B17CCC323CFF2 /* sleeppreventor.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 00FB54FF323D8D717828F85A /* sleeppreventor.cpp */; settings = {ATTRIBUTES = (); }; };
+		E216D918330E405F74FB376A /* dialogsettings.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 812A34FED14E4F1819EC7385 /* dialogsettings.cpp */; settings = {ATTRIBUTES = (); }; };
+		E45E51A644D5FC9F942ECE55 /* AGL.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 8D9815BDB5BD9F90D2BC05C5 /* AGL.framework */; };
+		E923AF9124875473BD5EAE4B /* QtWidgets.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 7B57BDBC6BDCBBB987041266 /* QtWidgets.framework */; };
+		EE3AAF366DB6FF4FB1F025E8 /* dummy.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 4C50EDEB5748B2EE94FC2867 /* dummy.cpp */; settings = {ATTRIBUTES = (); }; };
+		F2A75ACAC9DF6A3F4E5711E7 /* AppKit.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 723F90793B2C195E2CCB2233 /* AppKit.framework */; };
+		F69D418FC3A436057328D60F /* serversmodel.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = EDFFFC03397F735233BD65FA /* serversmodel.cpp */; settings = {ATTRIBUTES = (); }; };
+		F8B4525A1E6B011D3789F005 /* paranoik.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = A07DE07069DED755D90D9AF3 /* paranoik.cpp */; settings = {ATTRIBUTES = (); }; };
+		F8B465CE34D8DF87AAE95913 /* CoreFoundation.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 4D765E1B1EA6C757220C63E7 /* CoreFoundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A5F684931F08B46000C89515 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6DB9C3763D02B1415CD9D565 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B0F3478D0243C03943566F78;
+			remoteInfo = "Qt Preprocess";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A544A40E1F17E84B00538F97 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A544A4101F17E87700538F97 /* Sparkle.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A544A4141F17EBB700538F97 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+				A544A4161F17EBCD00538F97 /* dsa_pub.pem in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		00FB54FF323D8D717828F85A /* sleeppreventor.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = sleeppreventor.cpp; path = "/Users/sergey/onevpn-wrapper/sleeppreventor.cpp"; sourceTree = "<absolute>"; };
+		02A00AFFA7BA13A68C785366 /* QtNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QtNetwork.framework; path = /Users/sergey/Qt5.8.0/5.8/clang_64/lib/QtNetwork.framework; sourceTree = "<absolute>"; };
+		03357885B30889EBC70FC873 /* ui_dialogrestoreinternet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ui_dialogrestoreinternet.h; path = "/Users/sergey/onevpn-wrapper/xc/ui/ui_dialogrestoreinternet.h"; sourceTree = "<absolute>"; };
+		05D21D44F4EB32C30EECF1C3 /* dialogsettings.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = dialogsettings.h; path = "/Users/sergey/onevpn-wrapper/dialogsettings.h"; sourceTree = "<absolute>"; };
+		078F5B89B2FFDB944705B059 /* utils.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = utils.cpp; path = "/Users/sergey/onevpn-wrapper/utils.cpp"; sourceTree = "<absolute>"; };
+		0DC76ECF38DB73089F89DC0B /* formloginwaitanimation.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = formloginwaitanimation.cpp; path = "/Users/sergey/onevpn-wrapper/formloginwaitanimation.cpp"; sourceTree = "<absolute>"; };
+		0FC505A3DFDC0377521D724D /* ovpnconfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ovpnconfig.h; path = "/Users/sergey/onevpn-wrapper/ovpnconfig.h"; sourceTree = "<absolute>"; };
+		107EDB3898FCFF32B5048F85 /* OneVPN.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OneVPN.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		10F079596CF83803E394540E /* sleeppreventor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = sleeppreventor.h; path = "/Users/sergey/onevpn-wrapper/sleeppreventor.h"; sourceTree = "<absolute>"; };
+		1BBEFE83EF5607BD3FA3F0CE /* OneVPN.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = OneVPN.icns; path = "/Users/sergey/onevpn-wrapper/xc/Mac/OneVPN.icns"; sourceTree = "<absolute>"; };
+		205259EEEE2BADA5E64741E3 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = /System/Library/Frameworks/Security.framework; sourceTree = "<absolute>"; };
+		268E3E1C14AEF6EF076671A2 /* showlog.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = showlog.cpp; path = "/Users/sergey/onevpn-wrapper/showlog.cpp"; sourceTree = "<absolute>"; };
+		2A5723FF6A66B7C68E414B69 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = "/Users/sergey/onevpn-wrapper/main.cpp"; sourceTree = "<absolute>"; };
+		2B774D8E4178765CE52EAAF5 /* DiskArbitration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DiskArbitration.framework; path = /System/Library/Frameworks/DiskArbitration.framework; sourceTree = "<absolute>"; };
+		3088798666A2DC8EEAB20BBB /* serversmodel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = serversmodel.h; path = "/Users/sergey/onevpn-wrapper/serversmodel.h"; sourceTree = "<absolute>"; };
+		3378590CAA929FD14079D2B0 /* ui_formconnect.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ui_formconnect.h; path = "/Users/sergey/onevpn-wrapper/xc/ui/ui_formconnect.h"; sourceTree = "<absolute>"; };
+		388C00A3FC424DF20F2F61AE /* flagsresource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = flagsresource.h; path = "/Users/sergey/onevpn-wrapper/flagsresource.h"; sourceTree = "<absolute>"; };
+		3892EEAB2CC59CAEA308C3E9 /* utils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = utils.h; path = "/Users/sergey/onevpn-wrapper/utils.h"; sourceTree = "<absolute>"; };
+		3896704562AFCD0FC9DF52B8 /* OpenVPNConnectorQt.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = OpenVPNConnectorQt.mm; path = "/Users/sergey/onevpn-wrapper/Mac/OpenVPNConnectorQt.mm"; sourceTree = "<absolute>"; };
+		3D21307178740CF3ED705C93 /* animatedbutton.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = animatedbutton.cpp; path = "/Users/sergey/onevpn-wrapper/animatedbutton.cpp"; sourceTree = "<absolute>"; };
+		3DA3FAA084ADC174DD19AC17 /* dialogrestoreinternet.ui */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = dialogrestoreinternet.ui; path = "/Users/sergey/onevpn-wrapper/dialogrestoreinternet.ui"; sourceTree = "<absolute>"; };
+		40F87848F7726BD4BAD0842F /* OneVPN.pro */ = {isa = PBXFileReference; lastKnownFileType = text; name = OneVPN.pro; path = "/Users/sergey/onevpn-wrapper/OneVPN.pro"; sourceTree = "<absolute>"; };
+		4C50EDEB5748B2EE94FC2867 /* dummy.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = dummy.cpp; path = /Users/sergey/Qt5.8.0/5.8/clang_64/mkspecs/features/data/dummy.cpp; sourceTree = "<absolute>"; };
+		4C9DC780F7F18369BBEC5504 /* showlog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = showlog.h; path = "/Users/sergey/onevpn-wrapper/showlog.h"; sourceTree = "<absolute>"; };
+		4D765E1B1EA6C757220C63E7 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = /System/Library/Frameworks/CoreFoundation.framework; sourceTree = "<absolute>"; };
+		52926423320129E1C08E92F4 /* platformutils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = platformutils.h; path = "/Users/sergey/onevpn-wrapper/platformutils.h"; sourceTree = "<absolute>"; };
+		59299D81CF2EB73817B1C8BB /* formhaveaccount.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = formhaveaccount.h; path = "/Users/sergey/onevpn-wrapper/formhaveaccount.h"; sourceTree = "<absolute>"; };
+		59E1ECF7AF0459207737C765 /* formhaveaccount.ui */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = formhaveaccount.ui; path = "/Users/sergey/onevpn-wrapper/formhaveaccount.ui"; sourceTree = "<absolute>"; };
+		5A208FBC174948129A7EF804 /* formlogin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = formlogin.h; path = "/Users/sergey/onevpn-wrapper/formlogin.h"; sourceTree = "<absolute>"; };
+		5AEB3AD609E1BB3A668BEF9F /* formhaveaccount.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = formhaveaccount.cpp; path = "/Users/sergey/onevpn-wrapper/formhaveaccount.cpp"; sourceTree = "<absolute>"; };
+		5CA55EBA3DB42DA7E0AC4810 /* QtCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QtCore.framework; path = /Users/sergey/Qt5.8.0/5.8/clang_64/lib/QtCore.framework; sourceTree = "<absolute>"; };
+		66FD3181FDE2890F2A1BEE89 /* dialogrestoreinternet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = dialogrestoreinternet.h; path = "/Users/sergey/onevpn-wrapper/dialogrestoreinternet.h"; sourceTree = "<absolute>"; };
+		6813B78342CC259B5ABA39BD /* settings.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = settings.h; path = "/Users/sergey/onevpn-wrapper/settings.h"; sourceTree = "<absolute>"; };
+		723F90793B2C195E2CCB2233 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		7412A4DCC4F2E1CA37BB2B1C /* dialogsettings.ui */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = dialogsettings.ui; path = "/Users/sergey/onevpn-wrapper/dialogsettings.ui"; sourceTree = "<absolute>"; };
+		7B57BDBC6BDCBBB987041266 /* QtWidgets.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QtWidgets.framework; path = /Users/sergey/Qt5.8.0/5.8/clang_64/lib/QtWidgets.framework; sourceTree = "<absolute>"; };
+		7C65BA764BD81F287CAEB792 /* ui_formloginwaitanimation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ui_formloginwaitanimation.h; path = "/Users/sergey/onevpn-wrapper/xc/ui/ui_formloginwaitanimation.h"; sourceTree = "<absolute>"; };
+		812A34FED14E4F1819EC7385 /* dialogsettings.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = dialogsettings.cpp; path = "/Users/sergey/onevpn-wrapper/dialogsettings.cpp"; sourceTree = "<absolute>"; };
+		82951921D8A7288EA820BDBC /* mmainwindow.ui */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = mmainwindow.ui; path = "/Users/sergey/onevpn-wrapper/mmainwindow.ui"; sourceTree = "<absolute>"; };
+		82F443F2FB6C058A56628938 /* singleinstance.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = singleinstance.h; path = "/Users/sergey/onevpn-wrapper/SingleApplication/singleinstance.h"; sourceTree = "<absolute>"; };
+		8380A7F56154A6D84DE79177 /* killswitch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = killswitch.h; path = "/Users/sergey/onevpn-wrapper/killswitch.h"; sourceTree = "<absolute>"; };
+		88BF7ED5B5C6B0F15B9AA241 /* formlogin.ui */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = formlogin.ui; path = "/Users/sergey/onevpn-wrapper/formlogin.ui"; sourceTree = "<absolute>"; };
+		8AA58D16E28A19E041E1EB7E /* serverapi.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = serverapi.cpp; path = "/Users/sergey/onevpn-wrapper/serverapi.cpp"; sourceTree = "<absolute>"; };
+		8D9815BDB5BD9F90D2BC05C5 /* AGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AGL.framework; path = /System/Library/Frameworks/AGL.framework; sourceTree = "<absolute>"; };
+		91F140F208AA7EF3CF6433BD /* ui_showlog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ui_showlog.h; path = "/Users/sergey/onevpn-wrapper/xc/ui/ui_showlog.h"; sourceTree = "<absolute>"; };
+		932E36ECB68531CFB5FCB9CD /* ui_preferences.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ui_preferences.h; path = "/Users/sergey/onevpn-wrapper/xc/ui/ui_preferences.h"; sourceTree = "<absolute>"; };
+		9742F24EE18EA44D52824F1E /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = /System/Library/Frameworks/CoreServices.framework; sourceTree = "<absolute>"; };
+		97816669071D7117D24FE8D0 /* killswitch.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = killswitch.cpp; path = "/Users/sergey/onevpn-wrapper/killswitch.cpp"; sourceTree = "<absolute>"; };
+		9933F8A55CB7B0E5B003530B /* OpenVPNConnector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = OpenVPNConnector.h; path = "/Users/sergey/onevpn-wrapper/Mac/OpenVPNConnector.h"; sourceTree = "<absolute>"; };
+		9BA263AD71A097EFA7D07D4C /* showlog.ui */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = showlog.ui; path = "/Users/sergey/onevpn-wrapper/showlog.ui"; sourceTree = "<absolute>"; };
+		9E3EB1B02B7D1FD86DF499E8 /* animatedbutton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = animatedbutton.h; path = "/Users/sergey/onevpn-wrapper/animatedbutton.h"; sourceTree = "<absolute>"; };
+		A07DE07069DED755D90D9AF3 /* paranoik.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = paranoik.cpp; path = "/Users/sergey/onevpn-wrapper/paranoik.cpp"; sourceTree = "<absolute>"; };
+		A1A67BEAA744704B29168D39 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = /System/Library/Frameworks/IOKit.framework; sourceTree = "<absolute>"; };
+		A24155A5F67654F672B1DFE5 /* log.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = log.cpp; path = "/Users/sergey/onevpn-wrapper/log.cpp"; sourceTree = "<absolute>"; };
+		A2C69E37C8DDA398B74963DC /* preferences.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = preferences.h; path = "/Users/sergey/onevpn-wrapper/preferences.h"; sourceTree = "<absolute>"; };
+		A503F3A51F19083A0025555F /* Updater.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Updater.h; sourceTree = "<group>"; };
+		A503F3A61F19083A0025555F /* Updater.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Updater.mm; sourceTree = "<group>"; };
+		A52D40641F21247D009255F2 /* Agent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Agent.h; path = ../pubsub/Agent.h; sourceTree = "<group>"; };
+		A52D40651F21247D009255F2 /* Dispatcher.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Dispatcher.cpp; path = ../pubsub/Dispatcher.cpp; sourceTree = "<group>"; };
+		A52D40661F21247D009255F2 /* Dispatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Dispatcher.h; path = ../pubsub/Dispatcher.h; sourceTree = "<group>"; };
+		A52D40671F21247D009255F2 /* Logging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Logging.h; path = ../pubsub/Logging.h; sourceTree = "<group>"; };
+		A52D40681F21247D009255F2 /* Message.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Message.h; path = ../pubsub/Message.h; sourceTree = "<group>"; };
+		A52D40691F21247D009255F2 /* Publisher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Publisher.h; path = ../pubsub/Publisher.h; sourceTree = "<group>"; };
+		A52D406A1F21247D009255F2 /* Subscriber.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Subscriber.cpp; path = ../pubsub/Subscriber.cpp; sourceTree = "<group>"; };
+		A52D406B1F21247D009255F2 /* Subscriber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Subscriber.h; path = ../pubsub/Subscriber.h; sourceTree = "<group>"; };
+		A52D406F1F2124B1009255F2 /* VPNConnection.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = VPNConnection.cpp; path = ../Controllers/VPNConnection.cpp; sourceTree = "<group>"; };
+		A52D40701F2124B1009255F2 /* VPNConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VPNConnection.h; path = ../Controllers/VPNConnection.h; sourceTree = "<group>"; };
+		A52D40731F212602009255F2 /* VPNConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VPNConnection.h; path = ../DAOs/VPNConnection.h; sourceTree = "<group>"; };
+		A52D40741F212708009255F2 /* Types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Types.h; path = ../DAOs/Types.h; sourceTree = "<group>"; };
+		A52D40761F212C28009255F2 /* AbstractConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AbstractConnection.h; path = ../Controllers/AbstractConnection.h; sourceTree = "<group>"; };
+		A52D40771F212D82009255F2 /* Connection.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Connection.cpp; path = ../Controllers/ConnectionImpls/Mac/Connection.cpp; sourceTree = "<group>"; };
+		A52D40781F212D82009255F2 /* Connection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Connection.h; path = ../Controllers/ConnectionImpls/Mac/Connection.h; sourceTree = "<group>"; };
+		A52D407A1F212EA6009255F2 /* ConnectionFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ConnectionFactory.h; path = ../Controllers/ConnectionFactory.h; sourceTree = "<group>"; };
+		A52D407B1F212F38009255F2 /* ConnectionFactory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ConnectionFactory.cpp; path = ../Controllers/ConnectionFactory.cpp; sourceTree = "<group>"; };
+		A53023771F23DFAA0071A8DD /* .cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .cpp; sourceTree = "<group>"; };
+		A53023781F23DFAA0071A8DD /* moc_AbstractConnection.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = moc_AbstractConnection.cpp; sourceTree = "<group>"; };
+		A53023791F23DFAA0071A8DD /* moc_AnimatedButton.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = moc_AnimatedButton.cpp; sourceTree = "<group>"; };
+		A530237A1F23DFAA0071A8DD /* moc_Connection.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = moc_Connection.cpp; sourceTree = "<group>"; };
+		A530237B1F23DFAA0071A8DD /* moc_dialogrestoreinternet.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = moc_dialogrestoreinternet.cpp; sourceTree = "<group>"; };
+		A530237C1F23DFAA0071A8DD /* moc_dialogsettings.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = moc_dialogsettings.cpp; sourceTree = "<group>"; };
+		A530237D1F23DFAA0071A8DD /* moc_formconnect.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = moc_formconnect.cpp; sourceTree = "<group>"; };
+		A530237E1F23DFAA0071A8DD /* moc_formhaveaccount.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = moc_formhaveaccount.cpp; sourceTree = "<group>"; };
+		A530237F1F23DFAA0071A8DD /* moc_formlogin.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = moc_formlogin.cpp; sourceTree = "<group>"; };
+		A53023801F23DFAA0071A8DD /* moc_formloginwaitanimation.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = moc_formloginwaitanimation.cpp; sourceTree = "<group>"; };
+		A53023811F23DFAA0071A8DD /* moc_getmyip.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = moc_getmyip.cpp; sourceTree = "<group>"; };
+		A53023821F23DFAA0071A8DD /* moc_killswitch.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = moc_killswitch.cpp; sourceTree = "<group>"; };
+		A53023831F23DFAA0071A8DD /* moc_mmainwindow.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = moc_mmainwindow.cpp; sourceTree = "<group>"; };
+		A53023841F23DFAA0071A8DD /* moc_OpenVPNConnectorQt.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = moc_OpenVPNConnectorQt.cpp; sourceTree = "<group>"; };
+		A53023851F23DFAA0071A8DD /* moc_ovpnconfig.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = moc_ovpnconfig.cpp; sourceTree = "<group>"; };
+		A53023861F23DFAA0071A8DD /* moc_paranoik.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = moc_paranoik.cpp; sourceTree = "<group>"; };
+		A53023871F23DFAA0071A8DD /* moc_predefs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = moc_predefs.h; sourceTree = "<group>"; };
+		A53023881F23DFAA0071A8DD /* moc_preferences.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = moc_preferences.cpp; sourceTree = "<group>"; };
+		A53023891F23DFAA0071A8DD /* moc_serverapi.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = moc_serverapi.cpp; sourceTree = "<group>"; };
+		A530238A1F23DFAA0071A8DD /* moc_serversmodel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = moc_serversmodel.cpp; sourceTree = "<group>"; };
+		A530238B1F23DFAA0071A8DD /* moc_showlog.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = moc_showlog.cpp; sourceTree = "<group>"; };
+		A530238C1F23DFAA0071A8DD /* moc_singleinstance.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = moc_singleinstance.cpp; sourceTree = "<group>"; };
+		A530238D1F23DFAA0071A8DD /* moc_sleeppreventor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = moc_sleeppreventor.cpp; sourceTree = "<group>"; };
+		A53023A41F23E0290071A8DD /* moc_VPNConnection.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = moc_VPNConnection.cpp; sourceTree = "<group>"; };
+		A544A40C1F17E6F300538F97 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sparkle.framework; sourceTree = "<group>"; };
+		A544A40F1F17E87700538F97 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sparkle.framework; sourceTree = "<group>"; };
+		A544A4151F17EBCD00538F97 /* dsa_pub.pem */ = {isa = PBXFileReference; lastKnownFileType = text; path = dsa_pub.pem; sourceTree = "<group>"; };
+		A5D9427B1F08CFDC004C348D /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
+		A5D9427C1F08CFDC004C348D /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
+		A5F684951F08B56C00C89515 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		A5F684961F08B56C00C89515 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		A5F6849D1F08B5B300C89515 /* CrashlyticsImpl.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = CrashlyticsImpl.mm; path = ../Mac/CrashlyticsImpl.mm; sourceTree = "<group>"; };
+		A5F6849E1F08B5B300C89515 /* CrashlyticsImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CrashlyticsImpl.h; path = ../Mac/CrashlyticsImpl.h; sourceTree = "<group>"; };
+		A87470643CA1EFD2A4F3F13E /* formconnect.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = formconnect.cpp; path = "/Users/sergey/onevpn-wrapper/formconnect.cpp"; sourceTree = "<absolute>"; };
+		ABBE722B6FA6F4FC62A7A714 /* mainwindow.qrc */ = {isa = PBXFileReference; lastKnownFileType = text; name = mainwindow.qrc; path = "/Users/sergey/onevpn-wrapper/mainwindow.qrc"; sourceTree = "<absolute>"; };
+		AE71ADF13259662C258362F7 /* dnsleaks.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = dnsleaks.h; path = "/Users/sergey/onevpn-wrapper/dnsleaks.h"; sourceTree = "<absolute>"; };
+		AFE0DE3726A3BF3C1EDCB6C6 /* formloginwaitanimation.ui */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = formloginwaitanimation.ui; path = "/Users/sergey/onevpn-wrapper/formloginwaitanimation.ui"; sourceTree = "<absolute>"; };
+		B809FAC9FEAF503BA184F6AA /* .qmake.stash */ = {isa = PBXFileReference; lastKnownFileType = text; name = .qmake.stash; path = /Users/sergey/.qmake.stash; sourceTree = "<absolute>"; };
+		BA0944342BD9A39BCA588D3C /* getmyip.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = getmyip.cpp; path = "/Users/sergey/onevpn-wrapper/getmyip.cpp"; sourceTree = "<absolute>"; };
+		BCEEA7EB73DB83ACE5C228BC /* log.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = log.h; path = "/Users/sergey/onevpn-wrapper/log.h"; sourceTree = "<absolute>"; };
+		C066591024BFD5F3D5208FD0 /* OpenVPNConnectorQt.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = OpenVPNConnectorQt.h; path = "/Users/sergey/onevpn-wrapper/Mac/OpenVPNConnectorQt.h"; sourceTree = "<absolute>"; };
+		C0B48372CB39448B75451C5E /* settingskeys.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = settingskeys.h; path = "/Users/sergey/onevpn-wrapper/settingskeys.h"; sourceTree = "<absolute>"; };
+		C63C5365F1C6E06020C8D4D4 /* formlogin.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = formlogin.cpp; path = "/Users/sergey/onevpn-wrapper/formlogin.cpp"; sourceTree = "<absolute>"; };
+		C8CADAF5E50349A48561ACEC /* ui_dialogsettings.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ui_dialogsettings.h; path = "/Users/sergey/onevpn-wrapper/xc/ui/ui_dialogsettings.h"; sourceTree = "<absolute>"; };
+		C9684485977FE3407219F6E3 /* ServiceManagement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ServiceManagement.framework; path = /System/Library/Frameworks/ServiceManagement.framework; sourceTree = "<absolute>"; };
+		CEF723389E8096E344DD4185 /* getmyip.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = getmyip.h; path = "/Users/sergey/onevpn-wrapper/getmyip.h"; sourceTree = "<absolute>"; };
+		D0825ABE5619D2921EAE7D4D /* platformutils.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = platformutils.mm; path = "/Users/sergey/onevpn-wrapper/Mac/platformutils.mm"; sourceTree = "<absolute>"; };
+		D0F96789DDFAEA5253A5F1FB /* formconnect.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = formconnect.h; path = "/Users/sergey/onevpn-wrapper/formconnect.h"; sourceTree = "<absolute>"; };
+		D10E5AAFCC6EBA76536F6030 /* mmainwindow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = mmainwindow.h; path = "/Users/sergey/onevpn-wrapper/mmainwindow.h"; sourceTree = "<absolute>"; };
+		D4B32C2222F82AC56BADEB21 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = /System/Library/Frameworks/OpenGL.framework; sourceTree = "<absolute>"; };
+		D4BC07DEBE0761C62E71CEB4 /* OneVPN.pro */ = {isa = PBXFileReference; lastKnownFileType = text; name = OneVPN.pro; path = "/Users/sergey/onevpn-wrapper/xc/OneVPN.pro"; sourceTree = "<absolute>"; };
+		D9A2CD10F82143C91ACD0989 /* serverapi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = serverapi.h; path = "/Users/sergey/onevpn-wrapper/serverapi.h"; sourceTree = "<absolute>"; };
+		DAAC6E92ED711A844C7E3199 /* singleinstance.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = singleinstance.cpp; path = "/Users/sergey/onevpn-wrapper/SingleApplication/singleinstance.cpp"; sourceTree = "<absolute>"; };
+		DDD785D8C322105A01A52DFE /* ui_formhaveaccount.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ui_formhaveaccount.h; path = "/Users/sergey/onevpn-wrapper/xc/ui/ui_formhaveaccount.h"; sourceTree = "<absolute>"; };
+		E013BE998AB3E39A2D395A3E /* flagsresource.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = flagsresource.cpp; path = "/Users/sergey/onevpn-wrapper/flagsresource.cpp"; sourceTree = "<absolute>"; };
+		E04CF1B2B350443FDC5088E3 /* mmainwindow.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = mmainwindow.cpp; path = "/Users/sergey/onevpn-wrapper/mmainwindow.cpp"; sourceTree = "<absolute>"; };
+		E1711A2DBB21A7CFF0895D2C /* formconnect.ui */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = formconnect.ui; path = "/Users/sergey/onevpn-wrapper/formconnect.ui"; sourceTree = "<absolute>"; };
+		E185100563F32FC24A035682 /* dnsleaks.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = dnsleaks.cpp; path = "/Users/sergey/onevpn-wrapper/dnsleaks.cpp"; sourceTree = "<absolute>"; };
+		E999F7928B0551CB9FAD42E5 /* preferences.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = preferences.cpp; path = "/Users/sergey/onevpn-wrapper/preferences.cpp"; sourceTree = "<absolute>"; };
+		EC418E5AD9B8A0F596CC4DC8 /* dialogrestoreinternet.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = dialogrestoreinternet.cpp; path = "/Users/sergey/onevpn-wrapper/dialogrestoreinternet.cpp"; sourceTree = "<absolute>"; };
+		EDFFFC03397F735233BD65FA /* serversmodel.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = serversmodel.cpp; path = "/Users/sergey/onevpn-wrapper/serversmodel.cpp"; sourceTree = "<absolute>"; };
+		F0507124AF32159122A34956 /* QtGui.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QtGui.framework; path = /Users/sergey/Qt5.8.0/5.8/clang_64/lib/QtGui.framework; sourceTree = "<absolute>"; };
+		F09529829F1B55811880F1CF /* formloginwaitanimation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = formloginwaitanimation.h; path = "/Users/sergey/onevpn-wrapper/formloginwaitanimation.h"; sourceTree = "<absolute>"; };
+		F3008466D2DBC545253D6104 /* preferences.ui */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = preferences.ui; path = "/Users/sergey/onevpn-wrapper/preferences.ui"; sourceTree = "<absolute>"; };
+		F3854A122E09C5C062835300 /* OpenVPNConnector.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = OpenVPNConnector.mm; path = "/Users/sergey/onevpn-wrapper/Mac/OpenVPNConnector.mm"; sourceTree = "<absolute>"; };
+		F5B8D54F3ABD2C812329B750 /* ovpnconfig.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = ovpnconfig.cpp; path = "/Users/sergey/onevpn-wrapper/ovpnconfig.cpp"; sourceTree = "<absolute>"; };
+		FA31D8B5A7C686BD22CCA84E /* qrc_mainwindow.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = qrc_mainwindow.cpp; path = "/Users/sergey/onevpn-wrapper/xc/qrc_mainwindow.cpp"; sourceTree = "<absolute>"; };
+		FB2B73200DAAEFFF563A2CCB /* ui_formlogin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ui_formlogin.h; path = "/Users/sergey/onevpn-wrapper/xc/ui/ui_formlogin.h"; sourceTree = "<absolute>"; };
+		FE183F51C402B93EDD67B338 /* paranoik.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = paranoik.h; path = "/Users/sergey/onevpn-wrapper/paranoik.h"; sourceTree = "<absolute>"; };
+		FF51EA93364EE8D2C5B4F780 /* ui_mmainwindow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ui_mmainwindow.h; path = "/Users/sergey/onevpn-wrapper/xc/ui/ui_mmainwindow.h"; sourceTree = "<absolute>"; };
+		FF5BDAB0076F3391B219EA52 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = /System/Library/Frameworks/SystemConfiguration.framework; sourceTree = "<absolute>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D1C883685E82D5676953459A /* Link Binary With Libraries */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8B465CE34D8DF87AAE95913 /* CoreFoundation.framework in Link Binary With Libraries */,
+				668DDDA0C55405E7FCFD6CA5 /* CoreServices.framework in Link Binary With Libraries */,
+				15364689D2AB5A30E87A689F /* Security.framework in Link Binary With Libraries */,
+				D4639595C3BCF2A39D88DF6E /* SystemConfiguration.framework in Link Binary With Libraries */,
+				A5F684991F08B56D00C89515 /* libc++.dylib in Link Binary With Libraries */,
+				A544A40D1F17E6F300538F97 /* Sparkle.framework in Link Binary With Libraries */,
+				F2A75ACAC9DF6A3F4E5711E7 /* AppKit.framework in Link Binary With Libraries */,
+				54283C14EE0E186B41931DD3 /* ServiceManagement.framework in Link Binary With Libraries */,
+				E923AF9124875473BD5EAE4B /* QtWidgets.framework in Link Binary With Libraries */,
+				CA88567038B79302497CD4C2 /* QtGui.framework in Link Binary With Libraries */,
+				2A53C18999F087523D8C78F2 /* QtCore.framework in Link Binary With Libraries */,
+				A5D9427E1F08CFDC004C348D /* Crashlytics.framework in Link Binary With Libraries */,
+				A99B2AA0F9CBBDD12BA126A4 /* DiskArbitration.framework in Link Binary With Libraries */,
+				8D267F2E4776F0ECA2F49DC8 /* IOKit.framework in Link Binary With Libraries */,
+				6D55D2BB9B3492F5EF9CE2D6 /* QtNetwork.framework in Link Binary With Libraries */,
+				A5F6849A1F08B56D00C89515 /* libz.dylib in Link Binary With Libraries */,
+				8771A8C96E9C391044035D99 /* OpenGL.framework in Link Binary With Libraries */,
+				A5D9427D1F08CFDC004C348D /* Fabric.framework in Link Binary With Libraries */,
+				E45E51A644D5FC9F942ECE55 /* AGL.framework in Link Binary With Libraries */,
+			);
+			name = "Link Binary With Libraries";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		12E908B8A1C3C07C115504F5 /* Sources [uic] */ = {
+			isa = PBXGroup;
+			children = (
+				9BA263AD71A097EFA7D07D4C /* showlog.ui */,
+				82951921D8A7288EA820BDBC /* mmainwindow.ui */,
+				59E1ECF7AF0459207737C765 /* formhaveaccount.ui */,
+				88BF7ED5B5C6B0F15B9AA241 /* formlogin.ui */,
+				AFE0DE3726A3BF3C1EDCB6C6 /* formloginwaitanimation.ui */,
+				F3008466D2DBC545253D6104 /* preferences.ui */,
+				E1711A2DBB21A7CFF0895D2C /* formconnect.ui */,
+				7412A4DCC4F2E1CA37BB2B1C /* dialogsettings.ui */,
+				3DA3FAA084ADC174DD19AC17 /* dialogrestoreinternet.ui */,
+			);
+			name = "Sources [uic]";
+			sourceTree = "<group>";
+		};
+		1ACA271D4E471CFA642BB499 /* xc */ = {
+			isa = PBXGroup;
+			children = (
+				A53023761F23DFAA0071A8DD /* moc */,
+				FA31D8B5A7C686BD22CCA84E /* qrc_mainwindow.cpp */,
+				FE5DC5FE0D632A0DB8E6A484 /* ui */,
+			);
+			name = xc;
+			sourceTree = "<group>";
+		};
+		25B08E2869634E9BCBA333A2 /* Generated Sources */ = {
+			isa = PBXGroup;
+			children = (
+				1ACA271D4E471CFA642BB499 /* xc */,
+			);
+			name = "Generated Sources";
+			sourceTree = "<group>";
+		};
+		2EB56BE3C2D93CDAB0C52E67 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				A52D40721F212553009255F2 /* DAOs */,
+				A52D406E1F212496009255F2 /* Controllers */,
+				A52D40591F2123A0009255F2 /* PubSub */,
+				2A5723FF6A66B7C68E414B69 /* main.cpp */,
+				A5F6849D1F08B5B300C89515 /* CrashlyticsImpl.mm */,
+				A5F6849E1F08B5B300C89515 /* CrashlyticsImpl.h */,
+				A24155A5F67654F672B1DFE5 /* log.cpp */,
+				268E3E1C14AEF6EF076671A2 /* showlog.cpp */,
+				F8912575E7ED20AAC1210A21 /* SingleApplication */,
+				E04CF1B2B350443FDC5088E3 /* mmainwindow.cpp */,
+				BA0944342BD9A39BCA588D3C /* getmyip.cpp */,
+				8AA58D16E28A19E041E1EB7E /* serverapi.cpp */,
+				F5B8D54F3ABD2C812329B750 /* ovpnconfig.cpp */,
+				5AEB3AD609E1BB3A668BEF9F /* formhaveaccount.cpp */,
+				C63C5365F1C6E06020C8D4D4 /* formlogin.cpp */,
+				0DC76ECF38DB73089F89DC0B /* formloginwaitanimation.cpp */,
+				A87470643CA1EFD2A4F3F13E /* formconnect.cpp */,
+				E999F7928B0551CB9FAD42E5 /* preferences.cpp */,
+				EDFFFC03397F735233BD65FA /* serversmodel.cpp */,
+				E013BE998AB3E39A2D395A3E /* flagsresource.cpp */,
+				812A34FED14E4F1819EC7385 /* dialogsettings.cpp */,
+				078F5B89B2FFDB944705B059 /* utils.cpp */,
+				E185100563F32FC24A035682 /* dnsleaks.cpp */,
+				97816669071D7117D24FE8D0 /* killswitch.cpp */,
+				EC418E5AD9B8A0F596CC4DC8 /* dialogrestoreinternet.cpp */,
+				00FB54FF323D8D717828F85A /* sleeppreventor.cpp */,
+				A07DE07069DED755D90D9AF3 /* paranoik.cpp */,
+				3D21307178740CF3ED705C93 /* animatedbutton.cpp */,
+				6067A631B11E2107B1BC17B6 /* Mac */,
+				3CF3F2797283B2AD357C0F9E /* xc */,
+				BCEEA7EB73DB83ACE5C228BC /* log.h */,
+				6813B78342CC259B5ABA39BD /* settings.h */,
+				4C9DC780F7F18369BBEC5504 /* showlog.h */,
+				3892EEAB2CC59CAEA308C3E9 /* utils.h */,
+				52926423320129E1C08E92F4 /* platformutils.h */,
+				D10E5AAFCC6EBA76536F6030 /* mmainwindow.h */,
+				CEF723389E8096E344DD4185 /* getmyip.h */,
+				D9A2CD10F82143C91ACD0989 /* serverapi.h */,
+				0FC505A3DFDC0377521D724D /* ovpnconfig.h */,
+				59299D81CF2EB73817B1C8BB /* formhaveaccount.h */,
+				5A208FBC174948129A7EF804 /* formlogin.h */,
+				F09529829F1B55811880F1CF /* formloginwaitanimation.h */,
+				D0F96789DDFAEA5253A5F1FB /* formconnect.h */,
+				A2C69E37C8DDA398B74963DC /* preferences.h */,
+				3088798666A2DC8EEAB20BBB /* serversmodel.h */,
+				388C00A3FC424DF20F2F61AE /* flagsresource.h */,
+				05D21D44F4EB32C30EECF1C3 /* dialogsettings.h */,
+				AE71ADF13259662C258362F7 /* dnsleaks.h */,
+				8380A7F56154A6D84DE79177 /* killswitch.h */,
+				66FD3181FDE2890F2A1BEE89 /* dialogrestoreinternet.h */,
+				10F079596CF83803E394540E /* sleeppreventor.h */,
+				FE183F51C402B93EDD67B338 /* paranoik.h */,
+				9E3EB1B02B7D1FD86DF499E8 /* animatedbutton.h */,
+				C0B48372CB39448B75451C5E /* settingskeys.h */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		3CF3F2797283B2AD357C0F9E /* xc */ = {
+			isa = PBXGroup;
+			children = (
+				42B754CB74DC96D9A57B6F6E /* Mac */,
+			);
+			name = xc;
+			sourceTree = "<group>";
+		};
+		42B754CB74DC96D9A57B6F6E /* Mac */ = {
+			isa = PBXGroup;
+			children = (
+				1BBEFE83EF5607BD3FA3F0CE /* OneVPN.icns */,
+			);
+			name = Mac;
+			sourceTree = "<group>";
+		};
+		6067A631B11E2107B1BC17B6 /* Mac */ = {
+			isa = PBXGroup;
+			children = (
+				F3854A122E09C5C062835300 /* OpenVPNConnector.mm */,
+				A503F3A51F19083A0025555F /* Updater.h */,
+				A503F3A61F19083A0025555F /* Updater.mm */,
+				3896704562AFCD0FC9DF52B8 /* OpenVPNConnectorQt.mm */,
+				D0825ABE5619D2921EAE7D4D /* platformutils.mm */,
+				9933F8A55CB7B0E5B003530B /* OpenVPNConnector.h */,
+				C066591024BFD5F3D5208FD0 /* OpenVPNConnectorQt.h */,
+			);
+			name = Mac;
+			sourceTree = "<group>";
+		};
+		62432E680E28B85F7C6002F5 /* xc */ = {
+			isa = PBXGroup;
+			children = (
+				D4BC07DEBE0761C62E71CEB4 /* OneVPN.pro */,
+			);
+			name = xc;
+			sourceTree = "<group>";
+		};
+		74B182DB50CB5611B5C1C297 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				62432E680E28B85F7C6002F5 /* xc */,
+				B809FAC9FEAF503BA184F6AA /* .qmake.stash */,
+				40F87848F7726BD4BAD0842F /* OneVPN.pro */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		87DF60DE337FB58864343E39 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				ABBE722B6FA6F4FC62A7A714 /* mainwindow.qrc */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		A52D40591F2123A0009255F2 /* PubSub */ = {
+			isa = PBXGroup;
+			children = (
+				A52D40641F21247D009255F2 /* Agent.h */,
+				A52D40651F21247D009255F2 /* Dispatcher.cpp */,
+				A52D40661F21247D009255F2 /* Dispatcher.h */,
+				A52D40671F21247D009255F2 /* Logging.h */,
+				A52D40681F21247D009255F2 /* Message.h */,
+				A52D40691F21247D009255F2 /* Publisher.h */,
+				A52D406A1F21247D009255F2 /* Subscriber.cpp */,
+				A52D406B1F21247D009255F2 /* Subscriber.h */,
+			);
+			name = PubSub;
+			sourceTree = "<group>";
+		};
+		A52D406E1F212496009255F2 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A52D407B1F212F38009255F2 /* ConnectionFactory.cpp */,
+				A52D407A1F212EA6009255F2 /* ConnectionFactory.h */,
+				A52D40751F212C13009255F2 /* ConnectionImpls */,
+				A52D406F1F2124B1009255F2 /* VPNConnection.cpp */,
+				A52D40701F2124B1009255F2 /* VPNConnection.h */,
+				A52D40761F212C28009255F2 /* AbstractConnection.h */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		A52D40721F212553009255F2 /* DAOs */ = {
+			isa = PBXGroup;
+			children = (
+				A52D40741F212708009255F2 /* Types.h */,
+				A52D40731F212602009255F2 /* VPNConnection.h */,
+			);
+			name = DAOs;
+			sourceTree = "<group>";
+		};
+		A52D40751F212C13009255F2 /* ConnectionImpls */ = {
+			isa = PBXGroup;
+			children = (
+				A52D40771F212D82009255F2 /* Connection.cpp */,
+				A52D40781F212D82009255F2 /* Connection.h */,
+			);
+			name = ConnectionImpls;
+			sourceTree = "<group>";
+		};
+		A53023761F23DFAA0071A8DD /* moc */ = {
+			isa = PBXGroup;
+			children = (
+				A53023771F23DFAA0071A8DD /* .cpp */,
+				A53023781F23DFAA0071A8DD /* moc_AbstractConnection.cpp */,
+				A53023A41F23E0290071A8DD /* moc_VPNConnection.cpp */,
+				A53023791F23DFAA0071A8DD /* moc_AnimatedButton.cpp */,
+				A530237A1F23DFAA0071A8DD /* moc_Connection.cpp */,
+				A530237B1F23DFAA0071A8DD /* moc_dialogrestoreinternet.cpp */,
+				A530237C1F23DFAA0071A8DD /* moc_dialogsettings.cpp */,
+				A530237D1F23DFAA0071A8DD /* moc_formconnect.cpp */,
+				A530237E1F23DFAA0071A8DD /* moc_formhaveaccount.cpp */,
+				A530237F1F23DFAA0071A8DD /* moc_formlogin.cpp */,
+				A53023801F23DFAA0071A8DD /* moc_formloginwaitanimation.cpp */,
+				A53023811F23DFAA0071A8DD /* moc_getmyip.cpp */,
+				A53023821F23DFAA0071A8DD /* moc_killswitch.cpp */,
+				A53023831F23DFAA0071A8DD /* moc_mmainwindow.cpp */,
+				A53023841F23DFAA0071A8DD /* moc_OpenVPNConnectorQt.cpp */,
+				A53023851F23DFAA0071A8DD /* moc_ovpnconfig.cpp */,
+				A53023861F23DFAA0071A8DD /* moc_paranoik.cpp */,
+				A53023871F23DFAA0071A8DD /* moc_predefs.h */,
+				A53023881F23DFAA0071A8DD /* moc_preferences.cpp */,
+				A53023891F23DFAA0071A8DD /* moc_serverapi.cpp */,
+				A530238A1F23DFAA0071A8DD /* moc_serversmodel.cpp */,
+				A530238B1F23DFAA0071A8DD /* moc_showlog.cpp */,
+				A530238C1F23DFAA0071A8DD /* moc_singleinstance.cpp */,
+				A530238D1F23DFAA0071A8DD /* moc_sleeppreventor.cpp */,
+			);
+			path = moc;
+			sourceTree = "<group>";
+		};
+		AF39DD055C3EF8226FBE929D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4D765E1B1EA6C757220C63E7 /* CoreFoundation.framework */,
+				9742F24EE18EA44D52824F1E /* CoreServices.framework */,
+				205259EEEE2BADA5E64741E3 /* Security.framework */,
+				FF5BDAB0076F3391B219EA52 /* SystemConfiguration.framework */,
+				723F90793B2C195E2CCB2233 /* AppKit.framework */,
+				C9684485977FE3407219F6E3 /* ServiceManagement.framework */,
+				7B57BDBC6BDCBBB987041266 /* QtWidgets.framework */,
+				F0507124AF32159122A34956 /* QtGui.framework */,
+				5CA55EBA3DB42DA7E0AC4810 /* QtCore.framework */,
+				2B774D8E4178765CE52EAAF5 /* DiskArbitration.framework */,
+				A1A67BEAA744704B29168D39 /* IOKit.framework */,
+				02A00AFFA7BA13A68C785366 /* QtNetwork.framework */,
+				D4B32C2222F82AC56BADEB21 /* OpenGL.framework */,
+				8D9815BDB5BD9F90D2BC05C5 /* AGL.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B8254625CFD509ED2A24A166 /* Sources [moc_predefs] */ = {
+			isa = PBXGroup;
+			children = (
+				4C50EDEB5748B2EE94FC2867 /* dummy.cpp */,
+			);
+			name = "Sources [moc_predefs]";
+			sourceTree = "<group>";
+		};
+		E8C543AB96796ECAA2E65C57 /* OneVPN */ = {
+			isa = PBXGroup;
+			children = (
+				A544A4151F17EBCD00538F97 /* dsa_pub.pem */,
+				A544A40F1F17E87700538F97 /* Sparkle.framework */,
+				2EB56BE3C2D93CDAB0C52E67 /* Sources */,
+				25B08E2869634E9BCBA333A2 /* Generated Sources */,
+				74B182DB50CB5611B5C1C297 /* Supporting Files */,
+				87DF60DE337FB58864343E39 /* Resources */,
+				B8254625CFD509ED2A24A166 /* Sources [moc_predefs] */,
+				12E908B8A1C3C07C115504F5 /* Sources [uic] */,
+				AF39DD055C3EF8226FBE929D /* Frameworks */,
+				FE0A091FDBFB3E9C31B7A1BD /* Products */,
+				A5F684951F08B56C00C89515 /* libc++.dylib */,
+				A5F684961F08B56C00C89515 /* libz.dylib */,
+				A544A40C1F17E6F300538F97 /* Sparkle.framework */,
+				A5D9427B1F08CFDC004C348D /* Fabric.framework */,
+				A5D9427C1F08CFDC004C348D /* Crashlytics.framework */,
+			);
+			name = OneVPN;
+			sourceTree = "<group>";
+		};
+		F8912575E7ED20AAC1210A21 /* SingleApplication */ = {
+			isa = PBXGroup;
+			children = (
+				DAAC6E92ED711A844C7E3199 /* singleinstance.cpp */,
+				82F443F2FB6C058A56628938 /* singleinstance.h */,
+			);
+			name = SingleApplication;
+			sourceTree = "<group>";
+		};
+		FE0A091FDBFB3E9C31B7A1BD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				107EDB3898FCFF32B5048F85 /* OneVPN.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FE5DC5FE0D632A0DB8E6A484 /* ui */ = {
+			isa = PBXGroup;
+			children = (
+				91F140F208AA7EF3CF6433BD /* ui_showlog.h */,
+				FF51EA93364EE8D2C5B4F780 /* ui_mmainwindow.h */,
+				DDD785D8C322105A01A52DFE /* ui_formhaveaccount.h */,
+				FB2B73200DAAEFFF563A2CCB /* ui_formlogin.h */,
+				7C65BA764BD81F287CAEB792 /* ui_formloginwaitanimation.h */,
+				932E36ECB68531CFB5FCB9CD /* ui_preferences.h */,
+				3378590CAA929FD14079D2B0 /* ui_formconnect.h */,
+				C8CADAF5E50349A48561ACEC /* ui_dialogsettings.h */,
+				03357885B30889EBC70FC873 /* ui_dialogrestoreinternet.h */,
+			);
+			name = ui;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		43521282CE2B44AC599EE33A /* OneVPN */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6CC3B5D2136C7CD6A5CF5A59 /* Build configuration list for PBXNativeTarget "OneVPN" */;
+			buildPhases = (
+				F7E50F631C51CD5B5DC0BC43 /* Compile Sources */,
+				D1C883685E82D5676953459A /* Link Binary With Libraries */,
+				30414803F31797EB689AE508 /* Copy Bundle Resources */,
+				A5F684941F08B54400C89515 /* ShellScript */,
+				A544A40E1F17E84B00538F97 /* CopyFiles */,
+				A544A4141F17EBB700538F97 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				35610E6C6AE6C799E12BFB23 /* PBXTargetDependency */,
+			);
+			name = OneVPN;
+			productName = OneVPN;
+			productReference = 107EDB3898FCFF32B5048F85 /* OneVPN.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6DB9C3763D02B1415CD9D565 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+			};
+			buildConfigurationList = DAC4C1AA5EDEA1C85E9CA5E6 /* Build configuration list for PBXProject "OneVPN" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E8C543AB96796ECAA2E65C57 /* OneVPN */;
+			productRefGroup = FE0A091FDBFB3E9C31B7A1BD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				43521282CE2B44AC599EE33A /* OneVPN */,
+				B0F3478D0243C03943566F78 /* Qt Preprocess */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		30414803F31797EB689AE508 /* Copy Bundle Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A530238E1F23DFAA0071A8DD /* .cpp in Copy Bundle Resources */,
+			);
+			name = "Copy Bundle Resources";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5E618435888B9D49F8540165 /* Qt Qmake */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Qt Qmake";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/sergey/onevpn-wrapper/xc/ -f OneVPN.xcodeproj/qt_makeqmake.mak";
+			showEnvVarsInLog = 0;
+		};
+		7EF0942E79C014DCEC8976BC /* Qt Preprocessors */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/myfile",
+			);
+			name = "Qt Preprocessors";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#moc=\"/Users/sergey/Qt5.8.0/5.8/clang_64/bin/moc\"\n#rootpath=\"/Users/sergey/onevpn-wrapper\"\n#for f in $(find $rootpath -name '*.h' ! -path \"$rootpath/xc/*\" ! -path \"$rootpath/Linux/*\" ! -path \"$rootpath/Windows/*\"); do filename=$(basename \"$f\"); filename=\"${filename%.*}\"; $moc \"$f\" -o \"$rootpath/xc/moc/moc_\"$filename\".cpp\"; done\n#find \"$rootpath/xc/moc/\" -size 0 -delete\n\n#uic=\"/Users/sergey/Qt5.8.0/5.8/clang_64/bin/uic\"\n#for f in $(find $rootpath -name '*.ui'); do filename=$(basename \"$f\"); filename=\"${filename%.*}\"; $uic \"$f\" -o \"$rootpath/xc/ui/ui_\"$filename\".h\"; done\n\nmake -C /Users/sergey/onevpn-wrapper/xc/ -f OneVPN.xcodeproj/qt_preprocess.mak";
+			showEnvVarsInLog = 0;
+		};
+		A5F684941F08B54400C89515 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run 0a29d4d486c3dfec787e95b5d5f8c48ad5c06ccb 4239b9b3ca5a3a086ab4a641a13db7d08d86951e454736ac8adcc12d284811e8";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F7E50F631C51CD5B5DC0BC43 /* Compile Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A53023A01F23DFAA0071A8DD /* moc_serversmodel.cpp in Compile Sources */,
+				A53023981F23DFAA0071A8DD /* moc_getmyip.cpp in Compile Sources */,
+				87ECCF0B09515A43AB5EA177 /* main.cpp in Compile Sources */,
+				7F7D2299A094BF49C063B4DA /* log.cpp in Compile Sources */,
+				A530239C1F23DFAA0071A8DD /* moc_ovpnconfig.cpp in Compile Sources */,
+				270B73052C6D59E8A2338F4A /* showlog.cpp in Compile Sources */,
+				0DF2828C5383FCB13998281A /* singleinstance.cpp in Compile Sources */,
+				B1172B728FE926981A796BEA /* mmainwindow.cpp in Compile Sources */,
+				A53023961F23DFAA0071A8DD /* moc_formlogin.cpp in Compile Sources */,
+				A530239D1F23DFAA0071A8DD /* moc_paranoik.cpp in Compile Sources */,
+				A53023A51F23E0290071A8DD /* moc_VPNConnection.cpp in Compile Sources */,
+				A53023911F23DFAA0071A8DD /* moc_Connection.cpp in Compile Sources */,
+				A53023931F23DFAA0071A8DD /* moc_dialogsettings.cpp in Compile Sources */,
+				055680E1BDDCA26E0F8A281E /* getmyip.cpp in Compile Sources */,
+				918BD8130CD92AAC5FC3A26B /* serverapi.cpp in Compile Sources */,
+				CB847049A81A3BB5BB4A9D4B /* ovpnconfig.cpp in Compile Sources */,
+				38B42A0819EFC2D6C31F0B01 /* formhaveaccount.cpp in Compile Sources */,
+				18D4508DAA48DC37B4BB686B /* formlogin.cpp in Compile Sources */,
+				0078E0708AC91777560A33F7 /* formloginwaitanimation.cpp in Compile Sources */,
+				A52D406D1F21247D009255F2 /* Subscriber.cpp in Compile Sources */,
+				A530239E1F23DFAA0071A8DD /* moc_preferences.cpp in Compile Sources */,
+				83BFD4D2C698693AE99055C7 /* formconnect.cpp in Compile Sources */,
+				A53023941F23DFAA0071A8DD /* moc_formconnect.cpp in Compile Sources */,
+				A530239F1F23DFAA0071A8DD /* moc_serverapi.cpp in Compile Sources */,
+				A530239A1F23DFAA0071A8DD /* moc_mmainwindow.cpp in Compile Sources */,
+				188AF0A22932AD6C47353DF2 /* preferences.cpp in Compile Sources */,
+				F69D418FC3A436057328D60F /* serversmodel.cpp in Compile Sources */,
+				03D4C7B74B098D95ACDE467E /* flagsresource.cpp in Compile Sources */,
+				E216D918330E405F74FB376A /* dialogsettings.cpp in Compile Sources */,
+				4CFD321423426B236D636CA8 /* utils.cpp in Compile Sources */,
+				60146F6C3747C310FD5AFC47 /* dnsleaks.cpp in Compile Sources */,
+				A7E69B306AC554E8A4A6DCF7 /* killswitch.cpp in Compile Sources */,
+				A53023951F23DFAA0071A8DD /* moc_formhaveaccount.cpp in Compile Sources */,
+				1F09ED024FD467DEE5AB88E5 /* dialogrestoreinternet.cpp in Compile Sources */,
+				E167298FD80B17CCC323CFF2 /* sleeppreventor.cpp in Compile Sources */,
+				F8B4525A1E6B011D3789F005 /* paranoik.cpp in Compile Sources */,
+				A53023A31F23DFAA0071A8DD /* moc_sleeppreventor.cpp in Compile Sources */,
+				A53023991F23DFAA0071A8DD /* moc_killswitch.cpp in Compile Sources */,
+				A53023901F23DFAA0071A8DD /* moc_AnimatedButton.cpp in Compile Sources */,
+				52846310C9D9C60DED1E4269 /* animatedbutton.cpp in Compile Sources */,
+				A014B958FC821CEF4C3134B4 /* OpenVPNConnector.mm in Compile Sources */,
+				A530238F1F23DFAA0071A8DD /* moc_AbstractConnection.cpp in Compile Sources */,
+				625E060D7C51006BD60E2DFA /* OpenVPNConnectorQt.mm in Compile Sources */,
+				6F53DB941C55AD759012E835 /* platformutils.mm in Compile Sources */,
+				6BD243017EF5E681BE808656 /* qrc_mainwindow.cpp in Compile Sources */,
+				A53023971F23DFAA0071A8DD /* moc_formloginwaitanimation.cpp in Compile Sources */,
+				A52D40791F212D82009255F2 /* Connection.cpp in Compile Sources */,
+				A52D406C1F21247D009255F2 /* Dispatcher.cpp in Compile Sources */,
+				A503F3A71F19083A0025555F /* Updater.mm in Compile Sources */,
+				A53023A21F23DFAA0071A8DD /* moc_singleinstance.cpp in Compile Sources */,
+				A5F6849F1F08B5B300C89515 /* CrashlyticsImpl.mm in Compile Sources */,
+				A52D407C1F212F38009255F2 /* ConnectionFactory.cpp in Compile Sources */,
+				A52D40711F2124B1009255F2 /* VPNConnection.cpp in Compile Sources */,
+				EE3AAF366DB6FF4FB1F025E8 /* dummy.cpp in Compile Sources */,
+				A53023921F23DFAA0071A8DD /* moc_dialogrestoreinternet.cpp in Compile Sources */,
+				A530239B1F23DFAA0071A8DD /* moc_OpenVPNConnectorQt.cpp in Compile Sources */,
+				A53023A11F23DFAA0071A8DD /* moc_showlog.cpp in Compile Sources */,
+			);
+			name = "Compile Sources";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		35610E6C6AE6C799E12BFB23 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B0F3478D0243C03943566F78 /* Qt Preprocess */;
+			targetProxy = A5F684931F08B46000C89515 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		339EE1B2CC4FC24589A0EA95 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = x86_64;
+				CC = /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_COMPATIBILITY_VERSION = 1.0;
+				DYLIB_CURRENT_VERSION = 1.0.0;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					/Users/sergey/Qt5.8.0/5.8/clang_64/lib,
+					/Users/sergey/Qt5.8.0/5.8/clang_64/lib,
+					"$(SRCROOT)/Crashlytics.framework",
+				);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					"../../onevpn-wrapper",
+					.,
+					./tools/jsoncpp/include,
+					../../Qt5.8.0/5.8/clang_64/lib/QtWidgets.framework/Headers,
+					../../Qt5.8.0/5.8/clang_64/lib/QtGui.framework/Headers,
+					../../Qt5.8.0/5.8/clang_64/lib/QtNetwork.framework/Headers,
+					../../Qt5.8.0/5.8/clang_64/lib/QtCore.framework/Headers,
+					moc,
+					/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk/System/Library/Frameworks/OpenGL.framework/Headers,
+					/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk/System/Library/Frameworks/AGL.framework/Headers,
+					ui,
+					"../../Qt5.8.0/5.8/clang_64/mkspecs/macx-clang",
+				);
+				INFOPLIST_FILE = ../Mac/Info.plist;
+				INFOPLIST_PREPROCESS = YES;
+				LDPLUSPLUS = "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++";
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					/System/Library/Frameworks/,
+					/Users/sergey/Qt5.8.0/5.8/clang_64/lib,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				OBJROOT = obj/;
+				OTHER_CFLAGS = (
+					"-pipe",
+					"-O2",
+					"-Wall",
+					"-W",
+					"-fPIC",
+					"-DQT_NO_DEBUG",
+					"-DQT_WIDGETS_LIB",
+					"-DQT_GUI_LIB",
+					"-DQT_NETWORK_LIB",
+					"-DQT_CORE_LIB",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-pipe",
+					"-stdlib=libc++",
+					"-std=c++11",
+					"-O2",
+					"-std=gnu++11",
+					"-Wall",
+					"-W",
+					"-fPIC",
+					"-DQT_NO_DEBUG",
+					"-DQT_WIDGETS_LIB",
+					"-DQT_GUI_LIB",
+					"-DQT_NETWORK_LIB",
+					"-DQT_CORE_LIB",
+				);
+				OTHER_LDFLAGS = (
+					"-headerpad_max_install_names",
+					"-stdlib=libc++",
+					"-Wl,-rpath,/Users/sergey/Qt5.8.0/5.8/clang_64/lib",
+					"-F/Users/sergey/Qt5.8.0/5.8/clang_64/lib",
+					"-Xlinker",
+					"-U",
+					"-Xlinker",
+					_objc_readClassPair,
+				);
+				PRODUCT_NAME = OneVPN;
+				QT_LIBRARY_SUFFIX = "";
+				SDKROOT = macosx10.9;
+				SYMROOT = "/Users/sergey/onevpn-wrapper/xc/";
+			};
+			name = Release;
+		};
+		3AA6C32AC930069E80220CF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = x86_64;
+				CC = /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_COMPATIBILITY_VERSION = 1.0;
+				DYLIB_CURRENT_VERSION = 1.0.0;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					/Users/sergey/Qt5.8.0/5.8/clang_64/lib,
+					/Users/sergey/Qt5.8.0/5.8/clang_64/lib,
+					"$(SRCROOT)/Crashlytics.framework",
+				);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					"../../onevpn-wrapper",
+					.,
+					./tools/jsoncpp/include,
+					../../Qt5.8.0/5.8/clang_64/lib/QtWidgets.framework/Headers,
+					../../Qt5.8.0/5.8/clang_64/lib/QtGui.framework/Headers,
+					../../Qt5.8.0/5.8/clang_64/lib/QtNetwork.framework/Headers,
+					../../Qt5.8.0/5.8/clang_64/lib/QtCore.framework/Headers,
+					moc,
+					/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk/System/Library/Frameworks/OpenGL.framework/Headers,
+					/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk/System/Library/Frameworks/AGL.framework/Headers,
+					ui,
+					"../../Qt5.8.0/5.8/clang_64/mkspecs/macx-clang",
+				);
+				INFOPLIST_FILE = ../Mac/Info.plist;
+				INFOPLIST_PREPROCESS = YES;
+				LDPLUSPLUS = "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++";
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					/System/Library/Frameworks/,
+					/Users/sergey/Qt5.8.0/5.8/clang_64/lib,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				OBJROOT = obj/;
+				OTHER_CFLAGS = (
+					"-pipe",
+					"-O2",
+					"-Wall",
+					"-W",
+					"-fPIC",
+					"-DQT_NO_DEBUG",
+					"-DQT_WIDGETS_LIB",
+					"-DQT_GUI_LIB",
+					"-DQT_NETWORK_LIB",
+					"-DQT_CORE_LIB",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-pipe",
+					"-stdlib=libc++",
+					"-std=c++11",
+					"-O2",
+					"-std=gnu++11",
+					"-Wall",
+					"-W",
+					"-fPIC",
+					"-DQT_NO_DEBUG",
+					"-DQT_WIDGETS_LIB",
+					"-DQT_GUI_LIB",
+					"-DQT_NETWORK_LIB",
+					"-DQT_CORE_LIB",
+				);
+				OTHER_LDFLAGS = (
+					"-headerpad_max_install_names",
+					"-stdlib=libc++",
+					"-Wl,-rpath,/Users/sergey/Qt5.8.0/5.8/clang_64/lib",
+					"-F/Users/sergey/Qt5.8.0/5.8/clang_64/lib",
+					"-Xlinker",
+					"-U",
+					"-Xlinker",
+					_objc_readClassPair,
+				);
+				PRODUCT_NAME = OneVPN;
+				QT_LIBRARY_SUFFIX = _debug;
+				SDKROOT = macosx10.9;
+				SYMROOT = "/Users/sergey/onevpn-wrapper/xc/";
+			};
+			name = Debug;
+		};
+		6666AA5E688052234F6758D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				PRODUCT_NAME = OneVPN;
+				QT_LIBRARY_SUFFIX = "";
+				SDKROOT = macosx;
+				STRIP_INSTALLED_PRODUCT = NO;
+			};
+			name = Release;
+		};
+		77418F46922677BB04ED38DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PRODUCT_NAME = OneVPN;
+				QT_LIBRARY_SUFFIX = _debug;
+				SDKROOT = macosx;
+				STRIP_INSTALLED_PRODUCT = NO;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6CC3B5D2136C7CD6A5CF5A59 /* Build configuration list for PBXNativeTarget "OneVPN" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77418F46922677BB04ED38DD /* Debug */,
+				6666AA5E688052234F6758D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DAC4C1AA5EDEA1C85E9CA5E6 /* Build configuration list for PBXProject "OneVPN" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3AA6C32AC930069E80220CF1 /* Debug */,
+				339EE1B2CC4FC24589A0EA95 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6DB9C3763D02B1415CD9D565 /* Project object */;
+}
