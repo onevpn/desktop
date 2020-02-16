@@ -22,7 +22,6 @@
         <file alias="setting_off.png">OneVPN/FormConnect/setting_off.png</file>
         <file alias="setting_on.png">OneVPN/FormConnect/setting_on.png</file>
     </qresource>
-
     <qresource prefix="/Preferences">
         <file alias="account-off.png">OneVPN/Preferences/account-off.png</file>
         <file alias="account-on.png">OneVPN/Preferences/account-on.png</file>
@@ -34,11 +33,8 @@
         <file alias="black-list-on.png">OneVPN/Preferences/black-list-on.png</file>
         <file alias="wifi-list-off.png">OneVPN/Preferences/wifi-list-off.png</file>
         <file alias="wifi-list-on.png">OneVPN/Preferences/wifi-list-on.png</file>
-        <file alias="account-off.png">OneVPN/Preferences/account-off.png</file>
-        <file alias="account-on.png">OneVPN/Preferences/account-on.png</file>
         <file alias="close.png">OneVPN/Preferences/close.png</file>
     </qresource>
-
     <qresource prefix="/Common">
         <file alias="checkbox_off.png">OneVPN/Common/checkbox_off.png</file>
         <file alias="checkbox_on.png">OneVPN/Common/checkbox_on.png</file>

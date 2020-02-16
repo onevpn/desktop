@@ -56,6 +56,16 @@ if (APPLE)
         src/Mac/CrashlyticsImpl.mm
         src/Mac/Updater.mm
     )
+    execute_process (
+            COMMAND bash -c "(echo \"$(brew --prefix qt5)\")"
+            OUTPUT_VARIABLE QT5PATH
+    )
+    if (QT5PATH)
+        # Homebrew installs Qt5 in /usr/local/qt5.
+        list(APPEND CMAKE_PREFIX_PATH "${QT5PATH}")
+    else()
+        message(WARNING "Required dependence \"Qt5Core\" not found on the path /usr/local/opt/qt5")
+    endif()
 elseif(WIN32)
      set(SOURCES ${SOURCES}
         src/Windows/platformutils.cpp

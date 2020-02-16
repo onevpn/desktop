@@ -1,0 +1,17 @@
+version: '3'
+services:
+  dev:
+    build: # build in to current directory
+      context: ./
+      dockerfile: docker/Dockerfile
+#    security_opt: # options needed for gdb debugging
+#      - seccomp:unconfined
+#      - apparmor:unconfined
+    container_name: dev
+    ports:
+      - "7776:22" # SSH
+#      - "7777:7777" # GDB Server
+    volumes:
+      - ./:/var/onevpn
+      - /docker/qt5-src:/var/qt5
+    tty: true

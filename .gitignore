@@ -73,3 +73,7 @@ build3/
 build2/
 win_installer_old/
 .vs/
+.idea
+build-OneVPN-Desktop_Qt_*
+cmake-build-debug
+docker/qt5-src/

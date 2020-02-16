@@ -11,7 +11,7 @@
 	<key>CFBundleIconFile</key>
 	<string>OneVPN.icns</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.aaa.onevpn.onevpn</string>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundlePackageType</key>
@@ -43,11 +43,11 @@
 	<key>SMPrivilegedExecutables</key>
 	<dict>
 		<key>com.aaa.onevpn.OVPNHelper</key>
-		<string>identifier com.aaa.onevpn.OVPNHelper and certificate leaf[subject.CN] = &quot;3rd Party Mac Developer Application: Alexey Azanov (35NMW3MET5)&quot;</string>
+		<string>identifier com.aaa.onevpn.OVPNHelper and certificate leaf[subject.CN] = "3rd Party Mac Developer Application: Alexey Azanov (35NMW3MET5)"</string>
 	</dict>
-	<key>SUPublicDSAKeyFile</key>
-	<string>dsa_pub.pem</string>
 	<key>SUFeedURL</key>
 	<string></string>
+	<key>SUPublicDSAKeyFile</key>
+	<string>dsa_pub.pem</string>
 </dict>
 </plist>
