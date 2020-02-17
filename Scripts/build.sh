@@ -1,8 +1,8 @@
 #!/bin/sh -e
 
 #brew install qt5
-#qt5path=($(brew --prefix qt5))
-qt5path="/Users/sergey/Qt5.6.1/5.6/clang_64/"
+qt5path=($(brew --prefix qt5))
+#qt5path="/Users/sergey/Qt5.6.1/5.6/clang_64/"
 buildPath="$HOME/OneVPN-build"
 sourceP=$(pwd)
 sourcePath="$sourceP/.."

@@ -73,6 +73,8 @@ general_help() {
   fi
   pc "green" "--test | -t    "
   pc "none" " - run tests on docker container \n"
+  pc "green" "--delete | -D  "
+  pc "none" " - delete all docker container \n"
 }
 
 case "$1" in
@@ -96,10 +98,18 @@ case "$1" in
         fix_display_command
         ;;
     --own|-o)
-        own_commands $1 $2 $3 $4 $5 $6 $7 $8
+#        own_commands $1 $2 $3 $4 $5 $6 $7 $8
+        eval ${DOCKER_COMPOSE_CMD} exec dev sh
         ;;
     --test|-t)
         eval ${DOCKER_CMD} exec -it dev sh docker/do_test.sh
+        ;;
+    --delete|-D)
+        read -p "All docker containers in the system will be deleted, are you sure? [Y/N] "  -n 1 -r
+        echo
+        if [[ $REPLY =~ ^[Yy]$ ]]; then
+          eval ${DOCKER_CMD} prune -a
+        fi
         ;;
 
     --help|-h)
@@ -107,7 +117,7 @@ case "$1" in
         ;;
 
     *)
-        echo $"Usage: $0 {--build[-b]|--run[-r]|--down[-d]|--own[-o]|--test[-t]} {for help: -h/-help} CMD"
+        echo $"Usage: $0 {--build[-b]|--run[-r]|--down[-d]|--own[-o]|--test[-t]|--delete[-D]} {for help: -h/-help} CMD"
         exit 1
 
 esac
