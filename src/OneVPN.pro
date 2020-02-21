@@ -16,7 +16,7 @@ INCLUDEPATH += $${INCLUDE_DIR}/tools/jsoncpp/include
 
 SOURCES += main.cpp\
     SingleApplication/singleinstance.cpp \
-    Test/Test_GetMyIp.cpp \
+#    Test/Test_GetMyIp.cpp \
     mmainwindow.cpp \
     formhaveaccount.cpp \
     formlogin.cpp \
@@ -49,7 +49,8 @@ HEADERS += Windows/connection.h \
      Windows/openvpnconnectorqt.h
 
 RC_ICONS = OneVPN.ico
-LIBS += Ws2_32.lib Advapi32.lib Iphlpapi.lib Wininet.lib
+#LIBS += Ws2_32.lib Advapi32.lib Iphlpapi.lib Wininet.lib
+LIBS += -lws2_32 -ladvapi32 -liphlpapi -lwininet -lrasapi32
 }
 
 macx {
@@ -162,4 +163,4 @@ OBJECTS_DIR = obj
 UI_DIR = ui
 
 CONFIG += c++11
-CONFIG += qtestlib
+#CONFIG += qtestlib
