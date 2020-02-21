@@ -187,7 +187,8 @@ bool DnsLeaks::notifyIPChange(const char *lpszAdapterName)
 
     MultiByteToWideChar(CP_ACP, 0, lpszAdapterName, -1, wcAdapterName,256);
 
-    if((hDhcpDll = LoadLibrary("dhcpcsvc")) == NULL)
+    if((hDhcpDll = LoadLibraryA("dhcpcsvc")) == NULL)
+//    if((hDhcpDll = LoadLibraryW("dhcpcsvc")) == NULL)
         return FALSE;
 
     if((pDhcpNotifyProc = (DHCPNOTIFYPROC)GetProcAddress(hDhcpDll, "DhcpNotifyConfigChange")) != NULL)
@@ -205,7 +206,8 @@ bool DnsLeaks::flushDNS()
     HINSTANCE		hDnsDll;
     DNSFLUSHPROC	pDnsFlushProc;
 
-    if((hDnsDll = LoadLibrary("dnsapi")) == NULL) {
+    if((hDnsDll = LoadLibraryA("dnsapi")) == NULL) {
+//    if((hDnsDll = LoadLibrary("dnsapi")) == NULL) {
         return false;
     }
 

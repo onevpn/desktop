@@ -133,8 +133,9 @@ OpenVPNConnectorQt::~OpenVPNConnectorQt()
         // stop service
         //SERVICE_STATUS ss;
         //ControlService(schService_, SERVICE_CONTROL_STOP, &ss);
-		auto schService = OpenService(
-			schSCManager_,         // SCM database 
+		auto schService = OpenServiceA(
+//		auto schService = OpenService(
+			schSCManager_,         // SCM database
 			"OneVPNService",            // name of service 
 			SERVICE_STOP /*|
 			SERVICE_QUERY_STATUS |
@@ -188,7 +189,8 @@ bool OpenVPNConnectorQt::installHelper(const QString &label)
         return false;
 	}
 
-	auto schServiceOld = OpenService(
+    auto schServiceOld = OpenServiceA(
+//	auto schServiceOld = OpenService(
 		schSCManager_,         // SCM database 
 		"OneVPNService",            // name of service 
 		SERVICE_STOP |
@@ -238,7 +240,7 @@ bool OpenVPNConnectorQt::installHelper(const QString &label)
 	// }
 	// schService_ = schService;
 
-	//subinacl не работает под 10, надо что то думать, но работает под 7
+	//subinacl пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ 10, пїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ 7
 	// https://answers.microsoft.com/en-us/windows/forum/windows_10-security/subinacl-in-windows-10/49b9180c-b37c-4c5f-ae20-dcc8aedcfb9c?auth=1
 	{
 		schService_ = OpenService(schSCManager_, (LPCTSTR)label.toStdString().c_str(), SERVICE_START | SERVICE_STOP | SERVICE_QUERY_STATUS);
