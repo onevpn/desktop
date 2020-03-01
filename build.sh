@@ -56,6 +56,10 @@ forget_host_command() {
   fi
 }
 
+own_commands() {
+    eval ${DOCKER_COMPOSE_CMD} exec dev $1 $2 $3 $4 $5 $6 $7 $8
+}
+
 general_help() {
   pc "green" "--build | -b   "
   pc "none" " - build docker container \n"
@@ -98,8 +102,7 @@ case "$1" in
         fix_display_command
         ;;
     --own|-o)
-#        own_commands $1 $2 $3 $4 $5 $6 $7 $8
-        eval ${DOCKER_COMPOSE_CMD} exec dev sh
+        own_commands $2 $3 $4 $5 $6 $7 $8
         ;;
     --test|-t)
         eval ${DOCKER_CMD} exec -it dev sh docker/do_test.sh
@@ -108,7 +111,7 @@ case "$1" in
         read -p "All docker containers in the system will be deleted, are you sure? [Y/N] "  -n 1 -r
         echo
         if [[ $REPLY =~ ^[Yy]$ ]]; then
-          eval ${DOCKER_CMD} prune -a
+          eval ${DOCKER_CMD} prune system -a
         fi
         ;;
 

@@ -4,14 +4,18 @@ services:
     build: # build in to current directory
       context: ./
       dockerfile: docker/Dockerfile
-#    security_opt: # options needed for gdb debugging
-#      - seccomp:unconfined
-#      - apparmor:unconfined
+    security_opt: # options needed for gdb debugging
+      - seccomp:unconfined
+      - apparmor:unconfined
     container_name: dev
     ports:
       - "7776:22" # SSH
-#      - "7777:7777" # GDB Server
+      - "7777:7777" # GDB Server
     volumes:
       - ./:/var/onevpn
-      - ./docker/qt5-src:/var/qt5
+      - ${HOME}/.Xauthority:/home/dev/.Xauthority:rw # X11 stuff
+      - /tmp/.X11-unix:/tmp/.X11-unix # X11 stuff
+      - /dev/dri:/dev/dri #X11 stuff
+      - /dev/snd:/dev/snd #X11 stuff
+      - ${HOME}/.ssh/id_rsa.pub:/home/dev/.ssh/authorized_keys:rw
     tty: true
