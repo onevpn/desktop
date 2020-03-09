@@ -16,7 +16,7 @@ INCLUDEPATH += $${INCLUDE_DIR}/tools/jsoncpp/include
 
 SOURCES += main.cpp\
     SingleApplication/singleinstance.cpp \
-    Test/Test_GetMyIp.cpp \
+    #Test/Test_GetMyIp.cpp \
     mmainwindow.cpp \
     formhaveaccount.cpp \
     formlogin.cpp \
@@ -77,7 +77,7 @@ HEADERS += Mac/OpenVPNConnector.h \
 
 #QMAKE_MACOSX_DEPLOYMENT_TARGET = 10.7
 QMAKE_MAC_SDK = macosx10.15
-QMAKE_CXXFLAGS += -std=c++11
+QMAKE_CXXFLAGS += -std=c++11 -lpthread -licu -lpcre2 -lglib -lssl -lcrypt -lpng -lharfbuzz
 
 ICON = Mac/OneVPN.icns
 QMAKE_INFO_PLIST = Mac/Info.plist
@@ -162,4 +162,4 @@ OBJECTS_DIR = obj
 UI_DIR = ui
 
 CONFIG += c++11
-CONFIG += qtestlib
+#CONFIG += qtestlib
