@@ -7,6 +7,7 @@ ENV QT_DIR_PREFIX=/opt/qt
 ENV OPENSSL_DIR=/var/openssl
 ENV OPENSSL_DIR_PREFIX=/opt/openssl
 ENV XKBCOMMON_DIR=/var/xkbcommon
+ENV VCPKG_DIR=/var/vcpkg
 ENV QT_VERSION_BRANCH=v5.12.5
 
 RUN apt-get update \
@@ -27,7 +28,8 @@ RUN apt-get update \
     libxcb-xfixes0-dev libxcb-xinerama0 libxcb-xinerama0-dev libxcb-xkb-dev libxcb-xkb1 libxcb-xprint0 \
     libxcb-xprint0-dev libxcb-xtest0 libxcb-xtest0-dev libxcb-xv0 libxcb-xv0-dev libxcb-xvmc0 libxcb-xvmc0-dev \
     libxcb1 libxcb1-dev libxcomposite-dev libxcursor-dev libxdamage-dev libxext-dev libxfixes-dev libxi-dev \
-    libxrandr-dev libxrender-dev libxslt-dev libxss-dev libxtst-dev libdbus-1-3 libharfbuzz-bin perl python ruby
+    libxrandr-dev libxrender-dev libxslt-dev libxss-dev libxtst-dev libdbus-1-3 libharfbuzz-bin perl python ruby \
+    curl unzip tar software-properties-common
 
 WORKDIR ${ONEVPN_DIR}
 
@@ -35,9 +37,18 @@ WORKDIR ${ONEVPN_DIR}
 RUN git clone https://github.com/openssl/openssl ${OPENSSL_DIR} \
     && cd ${OPENSSL_DIR} \
     && git checkout OpenSSL_1_1_1-stable \
-    && ./config --prefix=${OPENSSL_DIR_PREFIX} \
+    && ./config --prefix=${OPENSSL_DIR_PREFIX} -Wl,--enable-new-dtags,-rpath,'$(LIBRPATH)' \
     && make $MAKE_THREADS_CNT \
-    && make install_sw
+    && make install_sw \
+    && echo '/opt/openssl/lib' >> /etc/ld.so.conf \
+    && cat /etc/ld.so.conf \
+    && ldconfig \
+    && echo 'export LD_LIBRARY_PATH=/opt/openssl/lib' >> ~/.bash_profile && . ~/.bash_profile
+
+## vcpkg
+RUN git clone https://github.com/microsoft/vcpkg.git ${VCPKG_DIR} && cd ${VCPKG_DIR} \
+    && add-apt-repository ppa:ubuntu-toolchain-r/test -y && apt-get update -y && apt-get install g++-7 -y \
+    && ./bootstrap-vcpkg.sh && ./vcpkg integrate install && ./vcpkg install harfbuzz pthread icu pcre2 glib
 
 ## Build QT
 RUN git clone git://code.qt.io/qt/qt5.git ${QT_DIR} \
@@ -47,13 +58,17 @@ RUN git clone git://code.qt.io/qt/qt5.git ${QT_DIR} \
     -confirm-license -opengl -nomake examples -nomake tests \
     -skip wayland -skip purchasing -skip serialbus -skip qtserialport -skip script -skip scxml -skip speech -skip qtwebengine \
     -plugindir ${QT_DIR}/qtbase/src/plugins/platformthemes/gtk3 -qt-pcre -qt-xcb -qt-libpng -qt-libjpeg -qt-zlib -qt-pcre \
-    -system-freetype -qt-harfbuzz -openssl-linked \
+    -qt-freetype -qt-harfbuzz -openssl-linked \
     OPENSSL_LIBS="-L${OPENSSL_DIR_PREFIX}/lib -lssl -lcrypto" -I ${OPENSSL_DIR_PREFIX}/include -L ${OPENSSL_DIR_PREFIX}/lib -pulseaudio -alsa \
     && make $MAKE_THREADS_CNT && make install
 
-## Build project
+## Build project via cmake
 RUN cd ${ONEVPN_DIR} && rm -rf build && mkdir build && cd build \
-    &&
-    && cmake --target install --config Release -DQt5Core_DIR=${QT_DIR_PREFIX}/lib/cmake/Qt5Core \
-    -DQt5Network_DIR=${QT_DIR_PREFIX}/lib/cmake/Qt5Network -DQt5Widgets_DIR=${QT_DIR_PREFIX}/lib/cmake/Qt5Widgets ../ \
+    && cmake --target install --config Release -DCMAKE_TOOLCHAIN_FILE=${VCPKG_DIR}/scripts/buildsystems/vcpkg.cmake -DQt5Core_DIR=${QT_DIR_PREFIX}/lib/cmake/Qt5Core -DQt5Network_DIR=${QT_DIR_PREFIX}/lib/cmake/Qt5Network -DQt5Widgets_DIR=${QT_DIR_PREFIX}/lib/cmake/Qt5Widgets ../ \
     && make $MAKE_THREADS_CNT
+
+## Build project via qmake
+RUN cd ${ONEVPN_DIR} && rm -rf qmake-build && mkdir qmake-build && cd qmake-build \
+    ${QT_DIR_PREFIX}/bin/qmake ${ONEVPN_DIR}/src/OneVPN.pro && make $MAKE_THREADS_CNT
+
+#-lpthread -licu -lpcre2 -lglib -lssl -lcrypto -lpng -lharfbuzz
