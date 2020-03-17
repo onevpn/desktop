@@ -1,0 +1,177 @@
+name: Windows.
+
+on:
+  push:
+    paths-ignore:
+      - 'docs/**'
+      - '*.md'
+      - '.github/workflows/linux.yml'
+      - '.github/workflows/mac.yml'
+  pull_request:
+    paths-ignore:
+      - 'docs/**'
+      - '*.md'
+      - '.github/workflows/linux.yml'
+      - '.github/workflows/mac.yml'
+
+jobs:
+
+  windows:
+    name: Windows
+    runs-on: windows-latest
+
+    strategy:
+      matrix:
+        defines:
+          - ""
+    env:
+      SDK: "10.0.18362.0"
+      VC: "call vcvars32.bat && cd Libraries"
+      GIT: "https://github.com"
+      QT: "5_12_5"
+      OPENSSL_VER: "1_1_1"
+      UPLOAD_ARTIFACT: "false"
+      ONLY_CACHE: "false"
+      MANUAL_CACHING: "2"
+      DOC_PATH: "docs/building-msvc.md"
+      AUTO_CACHING: "1"
+
+    steps:
+      - name: Get repository name.
+        shell: bash
+        run: echo ::set-env name=REPO_NAME::${GITHUB_REPOSITORY##*/}
+
+      - name: Clone.
+        uses: actions/checkout@v1
+        with:
+          submodules: recursive
+
+      - name: Set up environment variables.
+        shell: cmd
+        run: |
+          cd ..
+          move %REPO_NAME% temp
+          mkdir %REPO_NAME%
+          move temp %REPO_NAME%/%REPO_NAME%
+          cd %REPO_NAME%
+
+          echo ::add-path::C:\Strawberry\perl\bin\
+          echo ::add-path::"%programfiles%\NASM"
+
+          C:
+          cd "%programfiles(x86)%\Microsoft Visual Studio\2019\Enterprise\VC\Auxiliary\Build\"
+          echo ::add-path::%cd%
+
+          call vcvars32.bat
+          D:
+          cd %GITHUB_WORKSPACE%
+          msbuild -version > CACHE_KEY.txt
+          echo %MANUAL_CACHING% >> CACHE_KEY.txt
+
+          mkdir Libraries
+          cd Libraries
+          echo ::set-env name=LibrariesPath::%cd%
+
+      - name: Generate cache key.
+        shell: bash
+        run: |
+          if [ "$AUTO_CACHING" == "1" ]; then
+            thisFile=$REPO_NAME/.github/workflows/win.yml
+            echo `md5sum $thisFile | awk '{ print $1 }'` >> CACHE_KEY.txt
+          fi
+          echo ::set-env name=CACHE_KEY::`md5sum CACHE_KEY.txt | awk '{ print $1 }'`
+
+      - name: Choco installs.
+        run: |
+          choco install --no-progress -y nasm yasm jom ninja
+      - name: OpenSSL cache.
+        id: cache-openssl
+        uses: actions/cache@v1
+        with:
+          path: ${{ env.LibrariesPath }}/openssl_${{ env.OPENSSL_VER }}
+          key: ${{ runner.OS }}-${{ env.CACHE_KEY }}-${{ env.OPENSSL_VER }}
+
+      - name: OpenSSL.
+        if: steps.cache-openssl.outputs.cache-hit != 'true'
+        shell: cmd
+        run: |
+          %VC%
+
+          git clone %GIT%/openssl/openssl.git openssl_%OPENSSL_VER%
+          cd openssl_%OPENSSL_VER%
+          git checkout OpenSSL_%OPENSSL_VER%-stable
+          perl Configure no-shared debug-VC-WIN32
+          nmake
+          mkdir out32.dbg
+          move libcrypto.lib out32.dbg
+          move libssl.lib out32.dbg
+          move ossl_static.pdb out32.dbg\ossl_static
+          nmake clean
+          move out32.dbg\ossl_static out32.dbg\ossl_static.pdb
+          perl Configure no-shared VC-WIN32
+          nmake
+          mkdir out32
+          move libcrypto.lib out32
+          move libssl.lib out32
+          move ossl_static.pdb out32
+
+          rmdir /S /Q test
+          rmdir /S /Q .git
+
+      - name: Qt 5.12.5 cache.
+        id: cache-qt
+        uses: actions/cache@v1
+        with:
+          path: ${{ env.LibrariesPath }}/Qt-5.12.5
+          key: ${{ runner.OS }}-qt-${{ env.CACHE_KEY }}
+      - name: Configure Qt 5.12.5.
+        if: steps.cache-qt.outputs.cache-hit != 'true'
+        shell: cmd
+        run: |
+          %VC%
+
+          git clone git://code.qt.io/qt/qt5.git qt_%QT%
+          cd qt_%QT%
+          perl init-repository --module-subset=qtbase,qtimageformats
+          git checkout v5.12.5
+          git submodule update qtbase
+          git submodule update qtimageformats
+
+          SET SSL=%LibrariesPath%\openssl_1_1_1
+          SET LIBS=libcrypto.lib Ws2_32.lib Gdi32.lib Advapi32.lib Crypt32.lib User32.lib
+
+          configure ^
+          -prefix "%LibrariesPath%\Qt-5.12.5" ^
+          -debug ^
+          -force-debug-info ^
+          -opensource ^
+          -confirm-license ^
+          -static ^
+          -static-runtime -I "%SSL%\include" ^
+          -no-opengl ^
+          -openssl-linked ^
+          OPENSSL_LIBS_DEBUG="%SSL%\out32.dbg\libssl.lib %SSL%\out32.dbg\%LIBS%" ^
+          OPENSSL_LIBS_RELEASE="%SSL%\out32\libssl.lib %SSL%\out32\%LIBS%" ^
+          -mp ^
+          -nomake examples ^
+          -nomake tests ^
+          -platform win32-msvc
+      - name: Qt 5.12.5 build.
+        if: steps.cache-qt.outputs.cache-hit != 'true'
+        shell: cmd
+        run: |
+          %VC%
+          cd qt_%QT%
+
+          jom -j%NUMBER_OF_PROCESSORS%
+          jom -j%NUMBER_OF_PROCESSORS% install
+
+          cd ..
+          rmdir /S /Q qt_%QT%
+
+      - name: Build OneVPN
+        run: |
+          cd %REPO_NAME%
+          mkdir qmake-build
+          cd qmake-build
+          %LibrariesPath%\Qt-5.12.5\qmake ../src/OneVPN.pro

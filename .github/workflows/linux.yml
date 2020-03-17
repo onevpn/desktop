@@ -1,0 +1,262 @@
+name: Linux
+
+on:
+  push:
+    paths-ignore:
+      - 'docs/**'
+      - '*.md'
+      - '.github/workflows/win.yml'
+      - '.github/workflows/mac.yml'
+  pull_request:
+    paths-ignore:
+      - 'docs/**'
+      - '*.md'
+      - '.github/workflows/win.yml'
+      - '.github/workflows/mac.yml'
+
+
+jobs:
+
+  build:
+
+    name: Ubuntu 14.04
+    runs-on: ubuntu-latest
+    container: ubuntu:trusty
+
+    env:
+      GIT: "https://github.com"
+      QT: "5_12_5"
+      QT_PREFIX: "/usr/local/onevpn-app/Qt-5.12.5"
+      OPENSSL_VER: "1_1_1"
+      OPENSSL_PREFIX: "/usr/local/onevpn-app/openssl-1.1.1"
+      CMAKE_VER: "3.16.3"
+
+    steps:
+      - name: Get repository name.
+        run: echo ::set-env name=REPO_NAME::${GITHUB_REPOSITORY##*/}
+
+      - name: Clone.
+        uses: actions/checkout@v1
+        with:
+          submodules: recursive
+
+      - name: Disable man for further package installs.
+        run: |
+          cfgFile="/etc/dpkg/dpkg.cfg.d/no_man"
+          sudo touch $cfgFile
+          p() {
+            sudo echo "path-exclude=/usr/share/$1/*" >> $cfgFile
+          }
+
+          p man
+          p locale
+          p doc
+
+      - name: First set up.
+        shell: bash
+        run: |
+          cd ..
+          mv $REPO_NAME temp
+          mkdir $REPO_NAME
+          mv temp $REPO_NAME/$REPO_NAME
+          cd $REPO_NAME
+
+          sudo apt-get update
+          sudo apt-get upgrade -y
+          sudo apt-get install -y --fix-missing \
+          build-essential clang git wget autoconf xutils-dev libtool byacc bison \
+          flex gperf ibgstreamer-plugins-base0.10-dev libasound2-dev libatkmm-1.6-dev \
+          libbz2-dev libcap-dev libcups2-dev libdrm-dev libegl1-mesa-dev libfontconfig1-dev \
+          libfreetype6-dev libgcrypt11-dev libglu1-mesa-dev libgstreamer0.10-dev libicu-dev \
+          libnss3-dev libpci-dev libpulse-dev libssl-dev libudev-dev libx11-dev libx11-xcb-dev \
+          libxcb-composite0 libxcb-composite0-dev libxcb-cursor-dev libxcb-cursor0 \
+          libxcb-damage0 libxcb-damage0-dev libxcb-dpms0 libxcb-dpms0-dev libxcb-dri2-0 \
+          libxcb-dri2-0-dev libxcb-dri3-0 libxcb-dri3-dev libxcb-ewmh-dev libxcb-ewmh2 \
+          libxcb-glx0 libxcb-glx0-dev libxcb-icccm4 libxcb-icccm4-dev libxcb-image0 \
+          libxcb-image0-dev libxcb-keysyms1 libxcb-keysyms1-dev libxcb-present-dev \
+          libxcb-present0 libxcb-randr0 libxcb-randr0-dev libxcb-record0 libxcb-record0-dev \
+          libxcb-render-util0 libxcb-render-util0-dev libxcb-render0 libxcb-render0-dev \
+          libxcb-res0 libxcb-res0-dev libxcb-screensaver0 libxcb-screensaver0-dev libxcb-shape0 \
+          libxcb-shape0-dev libxcb-shm0 libxcb-shm0-dev libxcb-sync-dev libxcb-sync0-dev \
+          libxcb-sync1 libxcb-util0-dev libxcb-xevie0 libxcb-xevie0-dev \
+          libxcb-xf86dri0 libxcb-xf86dri0-dev libxcb-xfixes0 libxcb-xfixes0-dev libxcb-xinerama0 \
+          libxcb-xinerama0-dev libxcb-xkb-dev libxcb-xkb1 libxcb-xprint0 libxcb-xprint0-dev libxcb-xtest0 \
+          libxcb-xtest0-dev libxcb-xv0 libxcb-xv0-dev libxcb-xvmc0 libxcb-xvmc0-dev libxcb1 libxcb1-dev \
+          libxcomposite-dev libxcursor-dev libxdamage-dev libxext-dev libxfixes-dev libxi-dev \
+          libxrandr-dev libxrender-dev libxslt-dev libxss-dev libxtst-dev libdbus-1-3 libharfbuzz-bin \
+          perl python ruby curl unzip tar software-properties-common
+          sudo add-apt-repository ppa:ubuntu-toolchain-r/test -y && \
+          sudo apt-get update && \
+          sudo apt-get install gcc-8 g++-8 -y && \
+          sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-8 60 && \
+          sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-8 60 && \
+          sudo update-alternatives --config gcc && \
+          sudo add-apt-repository --remove ppa:ubuntu-toolchain-r/test -y
+
+          gcc --version
+
+          gcc --version > CACHE_KEY.txt
+          echo $MANUAL_CACHING >> CACHE_KEY.txt
+          if [ "$AUTO_CACHING" == "1" ]; then
+            thisFile=$REPO_NAME/.github/workflows/linux.yml
+            echo `md5sum $thisFile | cut -c -32` >> CACHE_KEY.txt
+          fi
+          md5cache=$(md5sum CACHE_KEY.txt | cut -c -32)
+          echo ::set-env name=CACHE_KEY::$md5cache
+
+          mkdir -p Libraries
+          cd Libraries
+          echo ::set-env name=LibrariesPath::`pwd`
+
+      - name: CMake.
+        run: |
+          cd $LibrariesPath
+          file=cmake-$CMAKE_VER-Linux-x86_64.sh
+          wget $GIT/Kitware/CMake/releases/download/v$CMAKE_VER/$file
+          sudo mkdir /opt/cmake
+          sudo sh $file --prefix=/opt/cmake --skip-license
+          sudo ln -s /opt/cmake/bin/cmake /usr/local/bin/cmake
+          cmake --version
+
+      - name: OpenSSL cache.
+        id: cache-openssl
+        uses: actions/cache@v1
+        with:
+          path: ${{ env.LibrariesPath }}/openssl-cache
+          key: ${{ runner.OS }}-${{ env.OPENSSL_VER }}-${{ env.CACHE_KEY }}
+
+      - name: OpenSSL build.
+        if: steps.cache-openssl.outputs.cache-hit != 'true'
+        run: |
+          cd $LibrariesPath
+
+          opensslDir=openssl_${OPENSSL_VER}
+          git clone -b OpenSSL_${OPENSSL_VER}-stable --depth=1 \
+            $GIT/openssl/openssl $opensslDir
+          cd $opensslDir
+          ./config --prefix=$LibrariesPath/openssl-cache
+          make -j$(nproc)
+          sudo make install_sw
+          cd ..
+          rm -rf $opensslDir
+
+      - name: OpenSSL install.
+        run: |
+          cd $LibrariesPath
+          sudo mkdir -p $OPENSSL_PREFIX
+          sudo cp -R openssl-cache/. $OPENSSL_PREFIX/
+
+      - name: Libxkbcommon.
+        run: |
+          cd $LibrariesPath
+
+          git clone -b xkbcommon-0.8.4 --depth=1 $GIT/xkbcommon/libxkbcommon.git
+          cd libxkbcommon
+          ./autogen.sh
+          make -j$(nproc)
+          sudo make install
+          cd ..
+          rm -rf libxkbcommon
+
+      - name: Qt 5.12.5 cache.
+        id: cache-qt
+        uses: actions/cache@v1
+        with:
+          path: ${{ env.LibrariesPath }}/qt-cache
+          key: ${{ runner.OS }}-qt-${{ env.CACHE_KEY }}
+
+      - name: Qt 5.12.5 build.
+        if: steps.cache-qt.outputs.cache-hit != 'true'
+        run: |
+          cd $LibrariesPath
+
+          git clone -b v5.12.5 --depth=1 git://code.qt.io/qt/qt5.git qt_${QT}
+          cd qt_${QT}
+          perl init-repository --module-subset=qtbase
+          git submodule update qtbase
+
+          ./configure -prefix "$LibrariesPath/qt-cache" \
+          -static \
+          -release \
+          -silent \
+          -force-debug-info \
+          -opensource \
+          -confirm-license \
+          -opengl \
+          -qt-zlib \
+          -qt-libpng \
+          -qt-libjpeg \
+          -qt-harfbuzz \
+          -qt-freetype \
+          -qt-pcre \
+          -qt-xcb \
+          -qt-freetype \
+          -no-gtk \
+          -skip wayland \
+          -skip purchasing \
+          -skip serialbus \
+          -skip qtserialport \
+          -skip script \
+          -skip scxml \
+          -skip speech \
+          -skip qtwebengine \
+          -openssl-linked \
+          -I "$OPENSSL_PREFIX/include" OPENSSL_LIBS="$OPENSSL_PREFIX/lib/libssl.a $OPENSSL_PREFIX/lib/libcrypto.a -ldl -lpthread" \
+          -nomake examples \
+          -nomake tests
+
+           make -j$(nproc)
+           sudo make install
+           cd ..
+           rm -rf qt_${QT}
+
+      - name: Qt 5.12.5 install.
+        run: |
+          cd $LibrariesPath
+          sudo mkdir -p $QT_PREFIX
+          sudo cp -R qt-cache/. $QT_PREFIX/
+
+      #       - name: VCPKG Build
+      #         run: |
+      #          cd $LibrariesPath
+      #          git clone https://github.com/microsoft/vcpkg.git vcpkg && cd vcpkg
+      #          echo ::set-env name=VcpkgPath::`pwd`
+      #          ./bootstrap-vcpkg.sh
+      #          ./vcpkg integrate install
+      #          ./vcpkg install harfbuzz pthread icu pcre2 glib
+
+      #      - name: Build OneVPN
+      #        run: |
+      #          cd $REPO_NAME
+      #          rm -rf build && mkdir build && cd build
+      #          cmake --target install --config Release \
+      #          -DCMAKE_TOOLCHAIN_FILE=$VcpkgPath/scripts/buildsystems/vcpkg.cmake \
+      #          -DQt5Core_DIR=$LibrariesPath/qt-cache/lib/cmake/Qt5Core \
+      #          -DQt5Network_DIR=$LibrariesPath/qt-cache/lib/cmake/Qt5Network \
+      #          -DQt5Widgets_DIR=$LibrariesPath/qt-cache/lib/cmake/Qt5Widgets ../
+      #          make -j$(nproc)
+      - name: Build OneVPN
+        run: |
+          cd $REPO_NAME
+          ls
+          cd ..
+          cd $REPO_NAME/src
+          ls
+          cd ../../
+          cd $REPO_NAME
+          rm -rf qmake-build && mkdir qmake-build && cd qmake-build
+          $LibrariesPath/qt-cache/bin/qmake ../src/OneVPN.pro
+          make -j$(nproc)
+
+      - name: Move artifact.
+        #if: env.UPLOAD_ARTIFACT == 'true'
+        run: |
+          cd $REPO_NAME/qmake-build
+          mkdir artifact
+          mv * artifact/
+      - uses: actions/upload-artifact@master
+        #if: env.UPLOAD_ARTIFACT == 'true'
+        name: Upload artifact.
+        with:
+          name: OneVPN
+          path: ${{ env.REPO_NAME }}/qmake-build/artifact/
